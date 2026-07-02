@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
 import { InfoCard } from "@/components/InfoCard";
+import { BaseLegalCards } from "@/components/BaseLegalCards";
 import { Footer } from "@/components/Footer";
 
 const workAreas = [
@@ -51,29 +52,6 @@ const newsItems = [
   "Reuniões de articulação",
   "Convênios e parcerias",
   "Entregas de projetos",
-];
-
-const legalItems = [
-  {
-    title: "Lei de Execução Penal",
-    description:
-      "Referência normativa central para a atuação dos Conselhos da Comunidade no âmbito da execução penal.",
-  },
-  {
-    title: "Resolução CNJ nº 488/2023",
-    description:
-      "Diretriz nacional relacionada ao fortalecimento e à atuação dos Conselhos da Comunidade.",
-  },
-  {
-    title: "Regimento interno",
-    description:
-      "Espaço reservado para conteúdo futuro, conforme documentação institucional do Conselho.",
-  },
-  {
-    title: "Documentos institucionais",
-    description:
-      "Área futura para reunir documentos de interesse social e institucional.",
-  },
 ];
 
 const partnerItems = [
@@ -152,22 +130,7 @@ export default function Home() {
               title="Base Legal"
               description="A atuação do Conselho da Comunidade é fundamentada na Lei de Execução Penal e nas diretrizes nacionais de fortalecimento dos Conselhos da Comunidade, especialmente no âmbito da execução penal, da participação social, da fiscalização, da articulação em rede e da garantia de direitos."
             />
-            <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-              {legalItems.map((item) => (
-                <article
-                  key={item.title}
-                  className="rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#0f6bab] hover:shadow-md"
-                >
-                  <div className="mb-5 h-1.5 w-12 rounded-full bg-[#e5b42b]" />
-                  <h3 className="text-lg font-semibold text-[#153f63]">
-                    {item.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-6 text-[#526170]">
-                    {item.description}
-                  </p>
-                </article>
-              ))}
-            </div>
+            <BaseLegalCards />
           </div>
         </section>
 
