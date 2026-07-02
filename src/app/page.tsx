@@ -81,14 +81,6 @@ const contactItems = [
     value: "@conselhodacomunidadejp",
     href: "https://www.instagram.com/conselhodacomunidadejp",
   },
-  {
-    label: "Endereço",
-    value: "Av. João Machado, s/n, Centro, João Pessoa/PB",
-  },
-  {
-    label: "CNPJ",
-    value: "22.937.599/0001-27",
-  },
 ];
 
 export default function Home() {
@@ -105,6 +97,7 @@ export default function Home() {
               eyebrow="Participação social"
               title="Sobre o Conselho"
               description="Atuação institucional sólida na execução penal, fundamentada na transparência pública, na escuta ativa e no compromisso com a comunidade."
+              descriptionClassName="text-justify"
             />
             <div className="rounded-sm border-l-4 border-[#0f6bab] bg-[#f4f6f8] p-7 shadow-sm sm:p-9">
               <p className="text-lg leading-8 text-[#344555] text-justify">
@@ -163,6 +156,7 @@ export default function Home() {
                   eyebrow="Projetos e iniciativas"
                   title="Ações concretas para acolhimento, cidadania e reinserção."
                   description="Conheça as iniciativas e convênios consolidados pelo Conselho em parceria com o Poder Público e a sociedade civil, conectando o sistema de justiça à rede de proteção social com entregas reais."
+                  descriptionClassName="text-justify"
                 />
                 <div className="mt-auto grid gap-4 pt-10 sm:grid-cols-2">
                   <article className="group rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#71ad44] hover:shadow-md">
@@ -267,6 +261,7 @@ export default function Home() {
                 eyebrow="Rede de apoio"
                 title="Parceiros e Rede de Apoio"
                 description="A atuação do Conselho é fortalecida por meio da articulação com instituições públicas, universidades, sociedade civil, empresas, organizações sociais e demais atores comprometidos com cidadania, dignidade e reinserção social."
+                descriptionClassName="text-justify"
               />
               <div className="grid gap-4 sm:grid-cols-2">
                 {partnerItems.map((item) => (
@@ -294,13 +289,13 @@ export default function Home() {
                     Transparência
                   </p>
                   <h2 className="mt-4 max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl">
-                    Informação pública para fortalecer a confiança social
+                    Informação pública como base da confiança social.
                   </h2>
-                  <p className="mt-6 max-w-3xl text-base leading-8 text-blue-50">
-                    A transparência fortalece a confiança pública. Este espaço
-                    poderá reunir relatórios, prestações de contas, ações
-                    realizadas, parceiros institucionais e documentos de
-                    interesse social.
+                  <p className="mt-6 max-w-3xl text-base leading-8 text-blue-50 text-justify">
+                    A publicização dos nossos atos é o pilar da nossa atuação.
+                    Aqui, a sociedade tem acesso direto aos nossos relatórios de
+                    gestão, prestações de contas e convênios firmados, garantindo
+                    total clareza e acompanhamento dos resultados.
                   </p>
                 </div>
                 <div className="grid border-t border-white/20 bg-white/10 p-5 sm:grid-cols-2 lg:border-l lg:border-t-0">
@@ -329,9 +324,10 @@ export default function Home() {
                 eyebrow="Canal institucional"
                 title="Enviar Relato"
                 description="Este espaço é destinado ao recebimento de relatos, sugestões, informações ou comunicações relacionadas à atuação do Conselho da Comunidade, especialmente envolvendo familiares, pessoas privadas de liberdade, egressos, parceiros e comunidade em geral."
+                descriptionClassName="text-justify"
               />
               <div className="rounded-sm border border-[#d8e2ea] bg-white p-7 shadow-sm sm:p-9">
-                <p className="text-base leading-8 text-[#526170]">
+                <p className="text-base leading-8 text-[#526170] text-justify">
                   O envio de relato não substitui canais oficiais de emergência,
                   processos judiciais, defensoria pública, Ministério Público,
                   órgãos de segurança ou serviços públicos competentes. As

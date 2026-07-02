@@ -20,11 +20,11 @@ export function Hero() {
           <h1 className="mobile-measure mt-5 text-3xl font-bold tracking-tight text-[#153f63] sm:text-5xl lg:text-6xl">
             Conselho da Comunidade da Comarca de João Pessoa
           </h1>
-          <p className="mobile-measure mt-6 text-lg leading-8 text-[#344555] sm:text-xl">
+          <p className="mobile-measure mt-6 text-lg leading-8 text-[#344555] sm:text-xl text-justify">
             Atuação social, cidadania e articulação comunitária no âmbito da
             execução penal.
           </p>
-          <p className="mobile-measure mt-5 text-base leading-8 text-[#526170]">
+          <p className="mobile-measure mt-5 text-base leading-8 text-[#526170] text-justify">
             Uma ponte entre a sociedade civil, o sistema de justiça, a rede
             pública e as pessoas impactadas pelo sistema prisional.
           </p>

@@ -3,6 +3,7 @@ type SectionTitleProps = {
   title: string;
   description?: string;
   align?: "left" | "center";
+  descriptionClassName?: string;
 };
 
 export function SectionTitle({
@@ -10,6 +11,7 @@ export function SectionTitle({
   title,
   description,
   align = "center",
+  descriptionClassName,
 }: SectionTitleProps) {
   const centered = align === "center";
 
@@ -22,7 +24,11 @@ export function SectionTitle({
         {title}
       </h2>
       {description ? (
-        <p className="mt-5 text-base leading-8 text-[#526170]">
+        <p
+          className={`mt-5 text-base leading-8 text-[#526170]${
+            descriptionClassName ? ` ${descriptionClassName}` : ""
+          }`}
+        >
           {description}
         </p>
       ) : null}
