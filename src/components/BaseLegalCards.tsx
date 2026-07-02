@@ -121,19 +121,33 @@ const cards: LegalCard[] = [
     ),
   },
   {
-    title: "Documentos institucionais",
+    title: "Documento Institucional",
     description:
-      "Área futura para reunir documentos de interesse social e institucional.",
+      "Lei nº 11.673/2020, que reconhece oficialmente o Conselho da Comunidade como entidade de Utilidade Pública.",
     back: (
-      <div className="flex flex-1 flex-col items-center justify-center gap-3 text-center">
-        <svg {...iconProps} className={iconClass}>
-          <circle cx="12" cy="12" r="9" />
-          <path d="M12 7v5l3 2" />
-        </svg>
-        <p className="text-lg font-bold">Em breve</p>
-        <p className="text-sm text-blue-50 text-justify">
-          Esta seção será atualizada com documentos institucionais do Conselho.
-        </p>
+      <div className="flex flex-1 flex-col justify-between text-center">
+        <div className="flex flex-col items-center text-center gap-3">
+          <svg {...iconProps} className={iconClass}>
+            <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+            <path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z" />
+          </svg>
+          <p className="text-sm text-blue-50 text-justify">Acessar documento</p>
+          <p className="text-sm text-blue-50 text-justify font-bold">
+            A Lei nº 11.673/2020 reconhece o Conselho da Comunidade da Comarca de
+            João Pessoa/PB como entidade de Utilidade Pública, conferindo
+            reconhecimento formal à sua atuação social e institucional.
+          </p>
+        </div>
+        <div className="mt-auto flex justify-center">
+          <a
+            href="https://drive.google.com/file/d/15FKWMX4X87nhcMl7yLWOfA-2fRf2MQic/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={backButtonClass}
+          >
+            Ver lei →
+          </a>
+        </div>
       </div>
     ),
   },
