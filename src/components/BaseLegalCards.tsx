@@ -163,7 +163,7 @@ function FlipCard({ title, description, back }: LegalCard) {
               setIsFlipped(true);
             }
           }}
-          className="absolute inset-0 cursor-pointer rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#0f6bab] hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[#0f6bab] focus:ring-offset-2"
+          className="absolute inset-0 cursor-pointer rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:border-[#0f6bab] hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-[#0f6bab] focus:ring-offset-2"
           style={{ backfaceVisibility: "hidden" }}
         >
           <div className="mb-5 h-1.5 w-12 rounded-full bg-[#e5b42b]" />

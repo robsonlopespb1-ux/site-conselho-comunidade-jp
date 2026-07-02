@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
 import { AtuacaoCards } from "@/components/AtuacaoCards";
 import { BaseLegalCards } from "@/components/BaseLegalCards";
+import { FadeInSection } from "@/components/FadeInSection";
 import { Footer } from "@/components/Footer";
 
 const workAreas = [
@@ -90,6 +91,7 @@ export default function Home() {
       <main>
         <Hero />
 
+        <FadeInSection>
         <section id="sobre" className="bg-white py-20 sm:py-24">
           <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.88fr_1.12fr] lg:px-8">
             <SectionTitle
@@ -115,7 +117,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+        </FadeInSection>
 
+        <FadeInSection>
         <section id="base-legal" className="py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <SectionTitle
@@ -126,7 +130,9 @@ export default function Home() {
             <BaseLegalCards />
           </div>
         </section>
+        </FadeInSection>
 
+        <FadeInSection delay={0}>
         <section id="atuacao" className="py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <SectionTitle
@@ -137,7 +143,9 @@ export default function Home() {
             <AtuacaoCards items={workAreas} />
           </div>
         </section>
+        </FadeInSection>
 
+        <FadeInSection>
         <section id="projetos" className="bg-white py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
@@ -150,7 +158,7 @@ export default function Home() {
                   descriptionClassName="text-justify"
                 />
                 <div className="mt-auto grid gap-4 pt-10 sm:grid-cols-2">
-                  <article className="group rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#71ad44] hover:shadow-md">
+                  <article className="group cursor-pointer rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:border-[#71ad44] hover:shadow-xl">
                     <div className="mb-5 h-1.5 w-12 rounded-full bg-[#e5b42b]" />
                     <h3 className="text-lg font-semibold text-[#153f63]">
                       Parcerias comunitárias
@@ -160,7 +168,7 @@ export default function Home() {
                       resultados de interesse social.
                     </p>
                   </article>
-                  <article className="group rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#71ad44] hover:shadow-md">
+                  <article className="group cursor-pointer rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:border-[#71ad44] hover:shadow-xl">
                     <div className="mb-5 h-1.5 w-12 rounded-full bg-[#e5b42b]" />
                     <h3 className="text-lg font-semibold text-[#153f63]">
                       Ações de dignidade e reinserção social
@@ -176,7 +184,7 @@ export default function Home() {
                 {initiatives.slice(0, 4).map((initiative) => (
                   <article
                     key={initiative}
-                    className="group rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#71ad44] hover:shadow-md"
+                    className="group cursor-pointer rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:border-[#71ad44] hover:shadow-xl"
                   >
                     <div className="mb-5 h-1.5 w-12 rounded-full bg-[#e5b42b]" />
                     <h3 className="text-lg font-semibold text-[#153f63]">
@@ -188,7 +196,7 @@ export default function Home() {
                     </p>
                   </article>
                 ))}
-                <article className="group rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#71ad44] hover:shadow-md">
+                <article className="group cursor-pointer rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:border-[#71ad44] hover:shadow-xl">
                   <div className="mb-5 h-1.5 w-12 rounded-full bg-[#e5b42b]" />
                   <h3 className="text-lg font-semibold text-[#153f63]">
                     Saúde no sistema prisional
@@ -199,7 +207,7 @@ export default function Home() {
                     conformidade com as diretrizes do SUS e da LEP.
                   </p>
                 </article>
-                <article className="group rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#71ad44] hover:shadow-md">
+                <article className="group cursor-pointer rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:border-[#71ad44] hover:shadow-xl">
                   <div className="mb-5 h-1.5 w-12 rounded-full bg-[#e5b42b]" />
                   <h3 className="text-lg font-semibold text-[#153f63]">
                     Educação e cultura
@@ -214,7 +222,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+        </FadeInSection>
 
+        <FadeInSection>
         <section id="noticias" className="py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <SectionTitle
@@ -243,7 +253,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+        </FadeInSection>
 
+        <FadeInSection>
         <section id="parceiros" className="bg-white py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
@@ -270,7 +282,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+        </FadeInSection>
 
+        <FadeInSection>
         <section id="transparencia" className="py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="overflow-hidden rounded-sm border border-[#cdd9e4] bg-[#0f6bab] shadow-sm">
@@ -306,6 +320,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        </FadeInSection>
 
         <section id="enviar-relato" className="py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -337,6 +352,7 @@ export default function Home() {
           </div>
         </section>
 
+        <FadeInSection>
         <section id="contato" className="bg-white py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
@@ -376,6 +392,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        </FadeInSection>
       </main>
       <Footer />
     </div>

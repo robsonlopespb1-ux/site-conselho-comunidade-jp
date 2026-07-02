@@ -6,7 +6,7 @@ type InfoCardProps = {
 
 export function InfoCard({ index, title, description }: InfoCardProps) {
   return (
-    <article className="group h-full rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#0f6bab] hover:shadow-md">
+    <article className="group h-full cursor-pointer rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:border-[#0f6bab] hover:shadow-xl">
       <div className="mb-6 flex items-center justify-between">
         <span className="flex h-12 w-12 items-center justify-center rounded-sm bg-[#eef6fc] text-sm font-bold text-[#0f6bab] transition group-hover:bg-[#0f6bab] group-hover:text-white">
           {String(index).padStart(2, "0")}
