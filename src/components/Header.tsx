@@ -70,6 +70,8 @@ export function Header() {
               <a
                 key={link.label}
                 href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={link.label}
                 className="inline-flex h-8 w-8 items-center justify-center rounded-sm text-blue-50 transition hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/70 focus:ring-offset-2 focus:ring-offset-[#0f6bab]"
               >

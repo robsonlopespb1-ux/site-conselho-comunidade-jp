@@ -367,6 +367,9 @@ export default function Home() {
                     {item.href ? (
                       <a
                         href={item.href}
+                        {...(item.href.startsWith("http")
+                          ? { target: "_blank", rel: "noopener noreferrer" }
+                          : {})}
                         className="mt-3 block break-words text-lg font-semibold text-[#0f6bab] underline-offset-4 hover:underline"
                       >
                         {item.value}
