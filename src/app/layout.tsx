@@ -5,7 +5,29 @@ import { ClientLayout } from "@/components/ClientLayout";
 export const metadata: Metadata = {
   title: "Conselho da Comunidade da Comarca de João Pessoa/PB",
   description:
-    "Site institucional do Conselho da Comunidade da Comarca de João Pessoa/PB.",
+    "Garantindo direitos, estruturando novas oportunidades. Atuação social, cidadania e articulação comunitária no âmbito da execução penal.",
+  openGraph: {
+    title: "Conselho da Comunidade da Comarca de João Pessoa/PB",
+    description: "Garantindo direitos, estruturando novas oportunidades.",
+    url: "https://www.conselhodacomunidadejp.com.br",
+    siteName: "Conselho da Comunidade JP",
+    images: [
+      {
+        url: "https://www.conselhodacomunidadejp.com.br/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Conselho da Comunidade da Comarca de João Pessoa/PB",
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Conselho da Comunidade da Comarca de João Pessoa/PB",
+    description: "Garantindo direitos, estruturando novas oportunidades.",
+    images: ["https://www.conselhodacomunidadejp.com.br/og-image.png"],
+  },
 };
 
 export default function RootLayout({
