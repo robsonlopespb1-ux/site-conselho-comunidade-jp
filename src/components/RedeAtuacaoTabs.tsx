@@ -30,7 +30,7 @@ const tabs = [
     label: "Articulação de Políticas Públicas",
     content:
       "Conectamos o ambiente prisional às redes de saúde, educação e assistência social. Focamos na implementação de soluções estruturais em parceria com o Estado para garantir que a ressocialização seja uma política pública contínua, e não apenas uma ação isolada.",
-    visualLabel: "Rede pública",
+    visualLabel: "Rede de Proteção",
     visualNumber: "02",
   },
   {
