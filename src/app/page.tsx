@@ -126,10 +126,10 @@ export default function Home() {
               align="left"
               eyebrow="Participação social"
               title="Sobre o Conselho"
-              description="Atuação institucional no âmbito da execução penal, com linguagem pública, escuta social e compromisso comunitário."
+              description="Atuação institucional sólida na execução penal, fundamentada na transparência pública, na escuta ativa e no compromisso com a comunidade."
             />
             <div className="rounded-sm border-l-4 border-[#0f6bab] bg-[#f4f6f8] p-7 shadow-sm sm:p-9">
-              <p className="text-lg leading-8 text-[#344555]">
+              <p className="text-lg leading-8 text-[#344555] text-justify">
                 O Conselho da Comunidade atua como órgão da execução penal e
                 espaço de participação social, contribuindo para o
                 acompanhamento, a articulação de políticas públicas, o apoio a
@@ -139,9 +139,6 @@ export default function Home() {
               <div className="mt-8 grid gap-4 border-t border-[#d8e2ea] pt-6 sm:grid-cols-2">
                 <p className="text-sm font-semibold uppercase tracking-[0.08em] text-[#386c38]">
                   Comarca de João Pessoa/PB
-                </p>
-                <p className="text-sm text-[#526170]">
-                  Presidência: Thiago Robson dos Santos Lopes
                 </p>
               </div>
             </div>
