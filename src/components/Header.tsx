@@ -1,6 +1,7 @@
 import Image from "next/image";
 import fs from "node:fs";
 import path from "node:path";
+import { ContactButton } from "@/components/ContactButton";
 
 const navItems = [
   { label: "Início", href: "#inicio" },
@@ -117,12 +118,9 @@ export function Header() {
           ))}
         </nav>
 
-        <a
-          href="mailto:conselhodacomunidadejp@gmail.com"
-          className="inline-flex w-full items-center justify-center rounded-sm bg-[#386c38] px-4 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-[#2f5c2f] focus:outline-none focus:ring-2 focus:ring-[#e5b42b] focus:ring-offset-2 sm:w-auto sm:shrink-0"
-        >
+        <ContactButton className="inline-flex w-full items-center justify-center rounded-sm bg-[#386c38] px-4 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-[#2f5c2f] focus:outline-none focus:ring-2 focus:ring-[#e5b42b] focus:ring-offset-2 sm:w-auto sm:shrink-0">
           Fale com o Conselho
-        </a>
+        </ContactButton>
       </div>
     </header>
   );

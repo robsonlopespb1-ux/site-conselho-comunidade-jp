@@ -1,6 +1,11 @@
+"use client";
+
 import { RedeAtuacaoTabs } from "@/components/RedeAtuacaoTabs";
+import { useContact } from "@/components/ClientLayout";
 
 export function Hero() {
+  const { openContact } = useContact();
+
   return (
     <section className="relative border-b border-[#d8e2ea] bg-white">
       <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#0f6bab] via-[#71ad44] to-[#e5b42b]" />
@@ -30,12 +35,13 @@ export function Hero() {
             >
               Conheça nossa atuação
             </a>
-            <a
-              href="mailto:conselhodacomunidadejp@gmail.com"
+            <button
+              type="button"
+              onClick={openContact}
               className="inline-flex items-center justify-center rounded-sm border border-[#0f6bab] bg-white px-6 py-3.5 text-sm font-bold text-[#0f6bab] transition hover:bg-[#eef6fc] focus:outline-none focus:ring-2 focus:ring-[#e5b42b] focus:ring-offset-2"
             >
               Fale com o Conselho
-            </a>
+            </button>
           </div>
         </div>
 
