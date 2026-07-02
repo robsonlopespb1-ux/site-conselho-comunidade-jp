@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
@@ -128,6 +129,19 @@ export default function Home() {
               description="A atuação do Conselho da Comunidade é fundamentada na Lei de Execução Penal e nas diretrizes nacionais de fortalecimento dos Conselhos da Comunidade, especialmente no âmbito da execução penal, da participação social, da fiscalização, da articulação em rede e da garantia de direitos."
             />
             <BaseLegalCards />
+            <hr className="mt-12 border-[#d8e2ea]" />
+            <p className="mt-8 text-center text-base leading-8 text-[#526170]">
+              Conheça as normas que asseguram direitos às pessoas privadas de
+              liberdade, familiares e egressos do sistema prisional na Paraíba.
+            </p>
+            <div className="mt-6 flex justify-center">
+              <Link
+                href="/legislacoes"
+                className="inline-flex items-center justify-center rounded-sm border border-[#0f6bab] px-6 py-3 text-sm font-bold text-[#0f6bab] transition-all duration-300 hover:bg-[#0f6bab] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#e5b42b] focus:ring-offset-2"
+              >
+                Ver todas as legislações →
+              </Link>
+            </div>
           </div>
         </section>
         </FadeInSection>
