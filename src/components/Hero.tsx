@@ -2,13 +2,13 @@ import { RedeAtuacaoTabs } from "@/components/RedeAtuacaoTabs";
 
 export function Hero() {
   return (
-    <section
-      id="inicio"
-      className="relative overflow-hidden border-b border-[#d8e2ea] bg-white"
-    >
+    <section className="relative border-b border-[#d8e2ea] bg-white">
       <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#0f6bab] via-[#71ad44] to-[#e5b42b]" />
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 sm:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-28">
-        <div className="mobile-measure flex w-full min-w-0 flex-col justify-center">
+      <div
+        id="inicio"
+        className="mx-auto grid min-h-[calc(100vh-130px)] max-w-7xl scroll-mt-0 gap-12 px-6 py-8 sm:py-10 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-12"
+      >
+        <div className="mobile-measure flex w-full min-w-0 flex-col justify-center pb-8">
           <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#386c38]">
             João Pessoa/PB
           </p>
