@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useState, type ReactNode } from "react";
 import { ContactModal } from "@/components/ContactModal";
+import { ScrollProgressBar } from "@/components/ScrollProgressBar";
 
 type ContactContextValue = {
   openContact: () => void;
@@ -26,6 +27,7 @@ export function ClientLayout({ children }: { children: ReactNode }) {
 
   return (
     <ContactContext.Provider value={{ openContact, closeContact }}>
+      <ScrollProgressBar />
       {children}
       <ContactModal isOpen={isContactOpen} onClose={closeContact} />
     </ContactContext.Provider>
