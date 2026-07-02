@@ -14,7 +14,7 @@ export function InfoCard({ index, title, description }: InfoCardProps) {
         <span className="h-1 w-12 rounded-full bg-[#e5b42b]" />
       </div>
       <h3 className="text-xl font-bold text-[#153f63]">{title}</h3>
-      <p className="mt-4 text-sm leading-7 text-[#526170]">{description}</p>
+      <p className="mt-4 text-sm leading-7 text-[#526170] text-justify">{description}</p>
     </article>
   );
 }

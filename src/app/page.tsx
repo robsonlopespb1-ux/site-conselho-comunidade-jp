@@ -138,8 +138,8 @@ export default function Home() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <SectionTitle
               eyebrow="Eixos de atuação"
-              title="Trabalho integrado entre justiça, comunidade e rede pública"
-              description="Áreas prioritárias para organizar iniciativas, parcerias e respostas sociais com clareza institucional."
+              title="Trabalho integrado entre Justiça, Sociedade e o Poder Público."
+              description="Frentes de atuação estruturadas para conectar projetos e parcerias, entregando resultados sociais nos quais a sociedade e as instituições podem confiar."
             />
             <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {workAreas.map((item, index) => (
@@ -157,14 +157,38 @@ export default function Home() {
         <section id="projetos" className="bg-white py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-              <SectionTitle
-                align="left"
-                eyebrow="Projetos e iniciativas"
-                title="Frentes sociais para acolhimento, cidadania e reinserção"
-                description="Uma base inicial para apresentar ações desenvolvidas com parceiros institucionais, comunidade e rede de proteção social."
-              />
+              <div className="flex flex-col lg:self-stretch">
+                <SectionTitle
+                  align="left"
+                  eyebrow="Projetos e iniciativas"
+                  title="Ações concretas para acolhimento, cidadania e reinserção."
+                  description="Conheça as iniciativas e convênios consolidados pelo Conselho em parceria com o Poder Público e a sociedade civil, conectando o sistema de justiça à rede de proteção social com entregas reais."
+                />
+                <div className="mt-auto grid gap-4 pt-10 sm:grid-cols-2">
+                  <article className="group rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#71ad44] hover:shadow-md">
+                    <div className="mb-5 h-1.5 w-12 rounded-full bg-[#e5b42b]" />
+                    <h3 className="text-lg font-semibold text-[#153f63]">
+                      Parcerias comunitárias
+                    </h3>
+                    <p className="mt-3 text-sm leading-6 text-[#526170] text-justify">
+                      Espaço preparado para registrar ações, metas, parceiros e
+                      resultados de interesse social.
+                    </p>
+                  </article>
+                  <article className="group rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#71ad44] hover:shadow-md">
+                    <div className="mb-5 h-1.5 w-12 rounded-full bg-[#e5b42b]" />
+                    <h3 className="text-lg font-semibold text-[#153f63]">
+                      Ações de dignidade e reinserção social
+                    </h3>
+                    <p className="mt-3 text-sm leading-6 text-[#526170] text-justify">
+                      Espaço preparado para registrar ações, metas, parceiros e
+                      resultados de interesse social.
+                    </p>
+                  </article>
+                </div>
+              </div>
               <div className="grid gap-4 sm:grid-cols-2">
-                {initiatives.map((initiative) => (
+                {initiatives.slice(0, 4).map((initiative) => (
                   <article
                     key={initiative}
                     className="group rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#71ad44] hover:shadow-md"
@@ -173,12 +197,34 @@ export default function Home() {
                     <h3 className="text-lg font-semibold text-[#153f63]">
                       {initiative}
                     </h3>
-                    <p className="mt-3 text-sm leading-6 text-[#526170]">
+                    <p className="mt-3 text-sm leading-6 text-[#526170] text-justify">
                       Espaço preparado para registrar ações, metas, parceiros e
                       resultados de interesse social.
                     </p>
                   </article>
                 ))}
+                <article className="group rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#71ad44] hover:shadow-md">
+                  <div className="mb-5 h-1.5 w-12 rounded-full bg-[#e5b42b]" />
+                  <h3 className="text-lg font-semibold text-[#153f63]">
+                    Saúde no sistema prisional
+                  </h3>
+                  <p className="mt-3 text-sm leading-6 text-[#526170] text-justify">
+                    Acompanhamento e articulação para garantia do acesso à saúde
+                    física e mental das pessoas privadas de liberdade, em
+                    conformidade com as diretrizes do SUS e da LEP.
+                  </p>
+                </article>
+                <article className="group rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#71ad44] hover:shadow-md">
+                  <div className="mb-5 h-1.5 w-12 rounded-full bg-[#e5b42b]" />
+                  <h3 className="text-lg font-semibold text-[#153f63]">
+                    Educação e cultura
+                  </h3>
+                  <p className="mt-3 text-sm leading-6 text-[#526170] text-justify">
+                    Fomento a iniciativas de educação formal, profissionalizante
+                    e expressão cultural no ambiente prisional, como instrumentos
+                    de ressocialização e dignidade humana.
+                  </p>
+                </article>
               </div>
             </div>
           </div>
