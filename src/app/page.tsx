@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
-import { InfoCard } from "@/components/InfoCard";
+import { AtuacaoCards } from "@/components/AtuacaoCards";
 import { BaseLegalCards } from "@/components/BaseLegalCards";
 import { Footer } from "@/components/Footer";
 
@@ -134,16 +134,7 @@ export default function Home() {
               title="Trabalho integrado entre Justiça, Sociedade e o Poder Público."
               description="Frentes de atuação estruturadas para conectar projetos e parcerias, entregando resultados sociais nos quais a sociedade e as instituições podem confiar."
             />
-            <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {workAreas.map((item, index) => (
-                <InfoCard
-                  key={item.title}
-                  index={index + 1}
-                  title={item.title}
-                  description={item.description}
-                />
-              ))}
-            </div>
+            <AtuacaoCards items={workAreas} />
           </div>
         </section>
 
