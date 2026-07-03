@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { InfoCard } from "@/components/InfoCard";
 
 type WorkArea = {
@@ -46,11 +47,24 @@ export function AtuacaoCards({ items }: { items: WorkArea[] }) {
           }`}
           style={{ transitionDelay: `${index * 100}ms` }}
         >
-          <InfoCard
-            index={index + 1}
-            title={item.title}
-            description={item.description}
-          />
+          {index === 1 ? (
+            <Link
+              href="/atuacao/apoio-familiares"
+              className="block h-full cursor-pointer"
+            >
+              <InfoCard
+                index={index + 1}
+                title={item.title}
+                description={item.description}
+              />
+            </Link>
+          ) : (
+            <InfoCard
+              index={index + 1}
+              title={item.title}
+              description={item.description}
+            />
+          )}
         </div>
       ))}
     </div>
