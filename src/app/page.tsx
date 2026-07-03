@@ -5,6 +5,7 @@ import { SectionTitle } from "@/components/SectionTitle";
 import { AtuacaoCards } from "@/components/AtuacaoCards";
 import { BaseLegalCards } from "@/components/BaseLegalCards";
 import { FadeInSection } from "@/components/FadeInSection";
+import { Bia } from "@/components/Bia";
 import { Footer } from "@/components/Footer";
 
 const workAreas = [
@@ -409,6 +410,7 @@ export default function Home() {
         </FadeInSection>
       </main>
       <Footer />
+      <Bia />
     </div>
   );
 }
