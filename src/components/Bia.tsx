@@ -90,7 +90,7 @@ export function Bia() {
                 BIA
                 <span className="inline-block h-2 w-2 rounded-full bg-green-400" />
               </p>
-              <p className="text-xs text-white/70">Assistente do Conselho</p>
+              <p className="text-xs text-white/70">Assistente Virtual do Conselho</p>
             </div>
             <button
               type="button"
