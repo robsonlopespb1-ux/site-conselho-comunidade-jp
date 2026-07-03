@@ -136,7 +136,9 @@ export function RedeAtuacaoTabs() {
             {overviewItems.map((item, index) => (
               <article
                 key={item}
-                className="flex items-center gap-4 rounded-sm bg-white p-4 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-md"
+                role="button"
+                onClick={() => setActiveIndex(index + 1)}
+                className="flex cursor-pointer items-center gap-4 rounded-sm bg-white p-4 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-md"
               >
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-sm bg-[#0f6bab] text-sm font-bold text-white">
                   {String(index + 1).padStart(2, "0")}
@@ -144,6 +146,9 @@ export function RedeAtuacaoTabs() {
                 <h3 className="text-sm font-semibold text-[#153f63] sm:text-base">
                   {item}
                 </h3>
+                <span className="ml-auto text-[#0f6bab]" aria-hidden="true">
+                  →
+                </span>
               </article>
             ))}
             <p className="mt-5 border-l-4 border-[#386c38] pl-4 text-sm leading-relaxed text-[#526170]">
