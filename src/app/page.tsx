@@ -5,6 +5,7 @@ import { SectionTitle } from "@/components/SectionTitle";
 import { AtuacaoCards } from "@/components/AtuacaoCards";
 import { BaseLegalCards } from "@/components/BaseLegalCards";
 import { FadeInSection } from "@/components/FadeInSection";
+import { NoticiasGrid } from "@/components/NoticiasGrid";
 import { Bia } from "@/components/Bia";
 import { Footer } from "@/components/Footer";
 
@@ -48,13 +49,6 @@ const initiatives = [
   "Apoio a crianças e famílias vulneráveis",
   "Parcerias comunitárias",
   "Ações de dignidade e reinserção social",
-];
-
-const newsItems = [
-  "Vistorias institucionais",
-  "Reuniões de articulação",
-  "Convênios e parcerias",
-  "Entregas de projetos",
 ];
 
 const partnerItems = [
@@ -247,25 +241,7 @@ export default function Home() {
               title="Notícias"
               description="Acompanhe registros institucionais de vistorias, reuniões, parcerias, entregas de projetos e iniciativas desenvolvidas pelo Conselho da Comunidade."
             />
-            <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {newsItems.map((item) => (
-                <article
-                  key={item}
-                  className="rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#71ad44] hover:shadow-md"
-                >
-                  <p className="text-sm font-semibold uppercase tracking-[0.12em] text-[#386c38]">
-                    Registro
-                  </p>
-                  <h3 className="mt-4 text-lg font-semibold text-[#153f63]">
-                    {item}
-                  </h3>
-                  <p className="mt-3 text-sm leading-6 text-[#526170]">
-                    Espaço estático inicial para organizar futuras atualizações
-                    públicas do Conselho.
-                  </p>
-                </article>
-              ))}
-            </div>
+            <NoticiasGrid />
           </div>
         </section>
         </FadeInSection>

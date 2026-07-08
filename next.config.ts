@@ -8,7 +8,7 @@ const securityHeaders = [
       "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com https://*.googleapis.com",
-      "frame-src https://maps.google.com https://www.google.com",
+      "frame-src https://maps.google.com https://www.google.com https://drive.google.com",
       "connect-src 'self' https://*.googleapis.com https://*.gstatic.com",
       "font-src 'self' data:",
     ].join("; "),
