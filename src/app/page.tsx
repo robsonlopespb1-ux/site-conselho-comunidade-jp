@@ -88,6 +88,19 @@ export default function Home() {
         <Hero />
 
         <FadeInSection>
+        <section id="noticias" className="py-20 sm:py-24">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <SectionTitle
+              eyebrow="Registros institucionais"
+              title="Notícias"
+              description="Acompanhe registros institucionais de vistorias, reuniões, parcerias, entregas de projetos e iniciativas desenvolvidas pelo Conselho da Comunidade."
+            />
+            <NoticiasGrid />
+          </div>
+        </section>
+        </FadeInSection>
+
+        <FadeInSection>
         <section id="sobre" className="bg-white py-20 sm:py-24">
           <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.88fr_1.12fr] lg:px-8">
             <SectionTitle
@@ -229,19 +242,6 @@ export default function Home() {
                 </article>
               </div>
             </div>
-          </div>
-        </section>
-        </FadeInSection>
-
-        <FadeInSection>
-        <section id="noticias" className="py-20 sm:py-24">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <SectionTitle
-              eyebrow="Registros institucionais"
-              title="Notícias"
-              description="Acompanhe registros institucionais de vistorias, reuniões, parcerias, entregas de projetos e iniciativas desenvolvidas pelo Conselho da Comunidade."
-            />
-            <NoticiasGrid />
           </div>
         </section>
         </FadeInSection>
