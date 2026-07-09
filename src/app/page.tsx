@@ -43,15 +43,6 @@ const workAreas = [
   },
 ];
 
-const initiatives = [
-  "Acolhimento de familiares",
-  "Cidadania e documentação",
-  "Empregabilidade e capacitação",
-  "Apoio a crianças e famílias vulneráveis",
-  "Parcerias comunitárias",
-  "Ações de dignidade e reinserção social",
-];
-
 const parceiros = [
   { nome: "TJPB", logo: "tjpb-ok.png", altura: 72 },
   { nome: "Ministério Público da Paraíba", logo: "mppb-ok.png", altura: 68 },
@@ -172,85 +163,6 @@ export default function Home() {
               description="Frentes de atuação estruturadas para conectar projetos e parcerias, entregando resultados sociais nos quais a sociedade e as instituições podem confiar."
             />
             <AtuacaoCards items={workAreas} />
-          </div>
-        </section>
-        </FadeInSection>
-
-        <FadeInSection>
-        <section id="projetos" className="bg-white py-20 sm:py-24">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-              <div className="flex flex-col lg:self-stretch">
-                <SectionTitle
-                  align="left"
-                  eyebrow="Projetos e iniciativas"
-                  title="Ações concretas para acolhimento, cidadania e reinserção."
-                  description="Conheça as iniciativas e convênios consolidados pelo Conselho em parceria com o Poder Público e a sociedade civil, conectando o sistema de justiça à rede de proteção social com entregas reais."
-                  descriptionClassName="text-justify"
-                />
-                <div className="mt-auto grid gap-4 pt-10 sm:grid-cols-2">
-                  <article className="group cursor-pointer rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:border-[#71ad44] hover:shadow-xl">
-                    <div className="mb-5 h-1.5 w-12 rounded-full bg-[#e5b42b]" />
-                    <h3 className="text-lg font-semibold text-[#153f63]">
-                      Parcerias comunitárias
-                    </h3>
-                    <p className="mt-3 text-sm leading-6 text-[#526170] text-justify">
-                      Espaço preparado para registrar ações, metas, parceiros e
-                      resultados de interesse social.
-                    </p>
-                  </article>
-                  <article className="group cursor-pointer rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:border-[#71ad44] hover:shadow-xl">
-                    <div className="mb-5 h-1.5 w-12 rounded-full bg-[#e5b42b]" />
-                    <h3 className="text-lg font-semibold text-[#153f63]">
-                      Ações de dignidade e reinserção social
-                    </h3>
-                    <p className="mt-3 text-sm leading-6 text-[#526170] text-justify">
-                      Espaço preparado para registrar ações, metas, parceiros e
-                      resultados de interesse social.
-                    </p>
-                  </article>
-                </div>
-              </div>
-              <div className="grid gap-4 sm:grid-cols-2">
-                {initiatives.slice(0, 4).map((initiative) => (
-                  <article
-                    key={initiative}
-                    className="group cursor-pointer rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:border-[#71ad44] hover:shadow-xl"
-                  >
-                    <div className="mb-5 h-1.5 w-12 rounded-full bg-[#e5b42b]" />
-                    <h3 className="text-lg font-semibold text-[#153f63]">
-                      {initiative}
-                    </h3>
-                    <p className="mt-3 text-sm leading-6 text-[#526170] text-justify">
-                      Espaço preparado para registrar ações, metas, parceiros e
-                      resultados de interesse social.
-                    </p>
-                  </article>
-                ))}
-                <article className="group cursor-pointer rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:border-[#71ad44] hover:shadow-xl">
-                  <div className="mb-5 h-1.5 w-12 rounded-full bg-[#e5b42b]" />
-                  <h3 className="text-lg font-semibold text-[#153f63]">
-                    Saúde no sistema prisional
-                  </h3>
-                  <p className="mt-3 text-sm leading-6 text-[#526170] text-justify">
-                    Acompanhamento e articulação para garantia do acesso à saúde
-                    física e mental das pessoas privadas de liberdade, em
-                    conformidade com as diretrizes do SUS e da LEP.
-                  </p>
-                </article>
-                <article className="group cursor-pointer rounded-sm border border-[#d8e2ea] bg-white p-6 shadow-sm transition-all duration-300 ease-out hover:-translate-y-2 hover:border-[#71ad44] hover:shadow-xl">
-                  <div className="mb-5 h-1.5 w-12 rounded-full bg-[#e5b42b]" />
-                  <h3 className="text-lg font-semibold text-[#153f63]">
-                    Educação e cultura
-                  </h3>
-                  <p className="mt-3 text-sm leading-6 text-[#526170] text-justify">
-                    Fomento a iniciativas de educação formal, profissionalizante
-                    e expressão cultural no ambiente prisional, como instrumentos
-                    de ressocialização e dignidade humana.
-                  </p>
-                </article>
-              </div>
-            </div>
           </div>
         </section>
         </FadeInSection>

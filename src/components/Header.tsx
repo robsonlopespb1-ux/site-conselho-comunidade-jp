@@ -9,7 +9,6 @@ const navItems = [
   { label: "Sobre", href: "#sobre" },
   { label: "Base Legal", href: "#base-legal" },
   { label: "Atuação", href: "#atuacao" },
-  { label: "Projetos", href: "#projetos" },
   { label: "Parceiros", href: "#parceiros" },
   { label: "Transparência", href: "#transparencia" },
   { label: "Enviar Relato", href: "#enviar-relato" },
