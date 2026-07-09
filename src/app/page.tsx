@@ -134,7 +134,7 @@ export default function Home() {
         <Hero />
 
         <FadeInSection>
-        <section id="noticias" className="py-20 sm:py-24">
+        <section id="noticias" className="py-14 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <SectionTitle
               eyebrow="Registros institucionais"
@@ -147,7 +147,7 @@ export default function Home() {
         </FadeInSection>
 
         <FadeInSection>
-        <section id="sobre" className="bg-white py-20 sm:py-24">
+        <section id="sobre" className="bg-white py-14 sm:py-24">
           <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.88fr_1.12fr] lg:px-8">
             <SectionTitle
               align="left"
@@ -175,7 +175,7 @@ export default function Home() {
         </FadeInSection>
 
         <FadeInSection>
-        <section id="base-legal" className="py-20 sm:py-24">
+        <section id="base-legal" className="py-14 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <SectionTitle
               eyebrow="Fundamentação institucional"
@@ -201,7 +201,7 @@ export default function Home() {
         </FadeInSection>
 
         <FadeInSection delay={0}>
-        <section id="atuacao" className="py-20 sm:py-24">
+        <section id="atuacao" className="py-14 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <SectionTitle
               eyebrow="Eixos de atuação"
@@ -214,7 +214,7 @@ export default function Home() {
         </FadeInSection>
 
         <FadeInSection>
-        <section id="parceiros" className="bg-white py-20 sm:py-24">
+        <section id="parceiros" className="bg-white py-14 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <SectionTitle
               align="left"
@@ -231,15 +231,15 @@ export default function Home() {
         </FadeInSection>
 
         <FadeInSection>
-        <section id="transparencia" className="py-20 sm:py-24">
+        <section id="transparencia" className="py-14 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="overflow-hidden rounded-sm border border-[#cdd9e4] bg-[#0f6bab] shadow-sm">
               <div className="grid gap-0 lg:grid-cols-[1fr_0.9fr]">
-                <div className="p-8 text-white sm:p-10 lg:p-12">
+                <div className="p-6 text-white sm:p-10 lg:p-12">
                   <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#e5b42b]">
                     Transparência
                   </p>
-                  <h2 className="mt-4 max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl">
+                  <h2 className="mt-4 max-w-2xl text-2xl font-bold tracking-tight sm:text-4xl">
                     Informação pública como base da confiança social.
                   </h2>
                   <p className="mt-6 max-w-3xl text-base leading-8 text-blue-50 text-justify">
@@ -268,7 +268,7 @@ export default function Home() {
         </section>
         </FadeInSection>
 
-        <section id="enviar-relato" className="py-20 sm:py-24">
+        <section id="enviar-relato" className="py-14 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
               <SectionTitle
@@ -299,7 +299,7 @@ export default function Home() {
         </section>
 
         <FadeInSection>
-        <section id="contato" className="bg-white py-20 sm:py-24">
+        <section id="contato" className="bg-white py-14 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
               <SectionTitle

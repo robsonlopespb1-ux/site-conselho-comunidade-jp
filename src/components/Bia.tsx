@@ -81,7 +81,7 @@ export function Bia() {
     <>
       {/* Janela de chat */}
       {isOpen && (
-        <div className="fixed bottom-28 left-8 z-50 w-80 overflow-hidden rounded-xl border border-[#d8e2ea] bg-white shadow-2xl sm:w-96">
+        <div className="fixed bottom-28 left-4 z-50 w-[calc(100vw-2rem)] max-w-80 overflow-hidden rounded-xl border border-[#d8e2ea] bg-white shadow-2xl sm:left-8 sm:w-96 sm:max-w-none">
           {/* Header */}
           <div className="flex items-center gap-3 bg-[#0f6bab] px-4 py-3">
             <BiaAvatar className="h-8 w-8 rounded-full object-cover" />
@@ -162,7 +162,7 @@ export function Bia() {
               onClick={sendMessage}
               disabled={loading}
               aria-label="Enviar mensagem"
-              className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0f6bab] text-white transition hover:bg-[#0d5d95] focus:outline-none focus:ring-2 focus:ring-[#e5b42b] focus:ring-offset-2 disabled:opacity-60"
+              className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#0f6bab] text-white transition hover:bg-[#0d5d95] focus:outline-none focus:ring-2 focus:ring-[#e5b42b] focus:ring-offset-2 disabled:opacity-60 lg:h-10 lg:w-10"
             >
               <svg
                 aria-hidden="true"

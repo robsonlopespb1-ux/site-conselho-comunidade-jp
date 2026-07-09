@@ -92,7 +92,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
           type="button"
           onClick={onClose}
           aria-label="Fechar"
-          className="absolute right-4 top-4 inline-flex h-9 w-9 items-center justify-center rounded-full text-[#526170] transition hover:bg-[#f4f6f8] hover:text-[#153f63] focus:outline-none focus:ring-2 focus:ring-[#0f6bab] focus:ring-offset-2"
+          className="absolute right-4 top-4 inline-flex h-11 w-11 items-center justify-center rounded-full text-[#526170] transition hover:bg-[#f4f6f8] hover:text-[#153f63] focus:outline-none focus:ring-2 focus:ring-[#0f6bab] focus:ring-offset-2 lg:h-9 lg:w-9"
         >
           <svg
             aria-hidden="true"

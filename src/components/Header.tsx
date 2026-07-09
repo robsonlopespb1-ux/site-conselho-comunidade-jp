@@ -57,10 +57,10 @@ export function Header() {
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-2 text-xs sm:flex-row sm:items-center sm:justify-between sm:text-sm lg:px-8">
           <span className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1 leading-5">
             <span>Conselho da Comunidade da Comarca de João Pessoa/PB</span>
-            <span className="text-blue-100" aria-hidden="true">
+            <span className="hidden text-blue-100 sm:inline" aria-hidden="true">
               |
             </span>
-            <span className="text-blue-50">
+            <span className="hidden text-blue-50 sm:inline">
               Garantindo direitos, estruturando novas oportunidades.
             </span>
           </span>
@@ -106,13 +106,13 @@ export function Header() {
 
         <nav
           aria-label="Navegação principal"
-          className="hidden flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm font-semibold text-[#344555] lg:flex xl:gap-x-4"
+          className="flex items-center gap-x-3 gap-y-2 overflow-x-auto text-sm font-semibold text-[#344555] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:flex-wrap lg:justify-center lg:overflow-visible xl:gap-x-4"
         >
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="main-nav-link hover:text-[#0f6bab]"
+              className="main-nav-link shrink-0 whitespace-nowrap py-3 hover:text-[#0f6bab] lg:py-0"
             >
               {item.label}
             </a>

@@ -126,10 +126,10 @@ export function NoticiasGrid() {
                 type="button"
                 onClick={() => setAtual(i)}
                 aria-label={`Notícia ${i + 1}: ${noticia.titulo}`}
-                className={`h-2.5 rounded-full transition-all duration-300 ${
+                className={`h-4 rounded-full transition-all duration-300 lg:h-2.5 ${
                   i === atual
-                    ? "bg-[#e5b42b] w-6"
-                    : "bg-white/70 hover:bg-white w-2.5"
+                    ? "bg-[#e5b42b] w-8 lg:w-6"
+                    : "bg-white/70 hover:bg-white w-4 lg:w-2.5"
                 }`}
               />
             ))}

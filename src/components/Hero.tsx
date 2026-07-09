@@ -21,7 +21,7 @@ export function Hero() {
       <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#0f6bab] via-[#71ad44] to-[#e5b42b]" />
       <div
         id="inicio"
-        className="mx-auto grid min-h-[calc(100vh-130px)] max-w-7xl scroll-mt-0 gap-12 px-6 py-8 sm:py-10 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-12"
+        className="mx-auto grid min-h-[calc(100vh-130px)] max-w-7xl scroll-mt-0 gap-8 px-6 py-8 sm:py-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:px-8 lg:py-12"
       >
         <div className="mobile-measure flex w-full min-w-0 flex-col justify-center pb-8">
           <p

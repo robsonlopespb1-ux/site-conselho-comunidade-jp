@@ -99,7 +99,7 @@ export function RedeAtuacaoTabs() {
         }
       `}</style>
       <div className="mb-7 flex items-center gap-3 border-b border-[#d8e2ea] pb-5">
-        <div className="flex items-center gap-2" role="tablist" aria-label="Abas da rede de atuação">
+        <div className="flex items-center gap-3 lg:gap-2" role="tablist" aria-label="Abas da rede de atuação">
           {tabs.map((tab, index) => {
             const isActive = activeIndex === index;
 
@@ -112,7 +112,7 @@ export function RedeAtuacaoTabs() {
                 aria-label={`Abrir aba ${index + 1}: ${tab.label}`}
                 onClick={() => setActiveIndex(index)}
                 className={[
-                  "h-3.5 w-3.5 cursor-pointer rounded-full transition duration-300 hover:scale-125 focus:outline-none focus:ring-2 focus:ring-[#0f6bab] focus:ring-offset-2",
+                  "h-5 w-5 cursor-pointer rounded-full transition duration-300 hover:scale-125 focus:outline-none focus:ring-2 focus:ring-[#0f6bab] focus:ring-offset-2 lg:h-3.5 lg:w-3.5",
                   isActive
                     ? "scale-110 bg-[#0f6bab] ring-2 ring-[#0f6bab]/25 ring-offset-2"
                     : "bg-[#71ad44] opacity-70",

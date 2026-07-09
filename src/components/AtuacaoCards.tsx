@@ -67,17 +67,17 @@ export function AtuacaoCards({ items }: { items: WorkArea[] }) {
       </div>
 
       {/* Bolinhas de navegação — uma por posição da janela (totalPosicoes + 1) */}
-      <div className="mt-6 flex justify-center gap-1.5">
+      <div className="mt-6 flex justify-center gap-2 lg:gap-1.5">
         {Array.from({ length: totalPosicoes + 1 }).map((_, index) => (
           <button
             key={index}
             type="button"
             onClick={() => setAtual(index)}
             aria-label={`Ir para a posição ${index + 1} do carrossel`}
-            className={`h-2.5 rounded-full transition-all duration-300 ${
+            className={`h-4 rounded-full transition-all duration-300 lg:h-2.5 ${
               atual === index
-                ? "w-6 bg-[#0f6bab]"
-                : "w-2.5 bg-[#d8e2ea] hover:bg-[#0f6bab]/40"
+                ? "w-8 bg-[#0f6bab] lg:w-6"
+                : "w-4 bg-[#d8e2ea] hover:bg-[#0f6bab]/40 lg:w-2.5"
             }`}
           />
         ))}

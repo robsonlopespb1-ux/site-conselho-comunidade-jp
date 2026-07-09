@@ -1,5 +1,7 @@
 "use client";
 
+import type { CSSProperties } from "react";
+
 type Parceiro = {
   nome: string;
   logo: string;
@@ -31,15 +33,17 @@ export function ParceirosMarquee({ parceiros }: ParceirosMarqueeProps) {
         }
       `}</style>
       <div className="parceiros-marquee relative w-full overflow-hidden">
-        {/* pr-16 espelha o gap-16 para o translateX(-50%) fechar o loop sem salto */}
-        <div className="parceiros-marquee-track flex w-max items-center gap-16 pr-16">
+        {/* o padding-right espelha o gap em cada breakpoint para o translateX(-50%) fechar o loop sem salto */}
+        <div className="parceiros-marquee-track flex w-max items-center gap-10 pr-10 lg:gap-16 lg:pr-16">
           {[...parceiros, ...parceiros].map((parceiro, index) => {
             const imagem = (
               <img
                 src={`/parceiros/${parceiro.logo}`}
                 alt={parceiro.nome}
-                style={{ height: parceiro.altura ?? 60 }}
-                className="w-auto object-contain opacity-60 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0"
+                style={
+                  { "--logo-h": `${parceiro.altura ?? 60}px` } as CSSProperties
+                }
+                className="h-[calc(var(--logo-h)*0.7)] w-auto object-contain opacity-60 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0 lg:h-[var(--logo-h)]"
               />
             );
 

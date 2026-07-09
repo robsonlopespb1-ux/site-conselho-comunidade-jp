@@ -50,13 +50,13 @@ export function Footer() {
               >
                 <a
                   href="#contato"
-                  className="text-blue-50 underline-offset-4 transition hover:text-white hover:underline"
+                  className="py-1.5 text-blue-50 underline-offset-4 transition hover:text-white hover:underline lg:py-0"
                 >
                   Contato
                 </a>
                 <Link
                   href="/privacidade"
-                  className="text-blue-50 underline-offset-4 transition hover:text-white hover:underline"
+                  className="py-1.5 text-blue-50 underline-offset-4 transition hover:text-white hover:underline lg:py-0"
                 >
                   Política de Privacidade
                 </Link>
