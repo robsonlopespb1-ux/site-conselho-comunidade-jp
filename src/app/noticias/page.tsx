@@ -19,7 +19,7 @@ const noticias = [
     href: "/noticias/gravidez-maternidade-penitenciaria",
   },
   {
-    imagem: "/thumb-cnj.jpeg",
+    imagem: "/thumb-cnj.png",
     data: "Julho 2026",
     titulo:
       "Visita técnica do CNJ à Paraíba destaca experiência com grupos reflexivos no sistema prisional",
