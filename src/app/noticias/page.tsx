@@ -10,6 +10,15 @@ export const metadata: Metadata = {
 
 const noticias = [
   {
+    imagem: "/gravidez-maternidade.png",
+    data: "04 de julho de 2026",
+    titulo:
+      "Gravidez, maternidade e os desafios de manter laços com os filhos, dentro de uma penitenciária",
+    resumo:
+      "Reportagem do TJPB retrata a realidade de mulheres grávidas e mães na Penitenciária Feminina Maria Júlia Maranhão, em João Pessoa, e o acompanhamento do Conselho da Comunidade.",
+    href: "/noticias/gravidez-maternidade-penitenciaria",
+  },
+  {
     imagem: "/thumb-cnj.jpeg",
     data: "Julho 2026",
     titulo:

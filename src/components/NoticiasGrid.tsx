@@ -25,6 +25,19 @@ type Noticia = {
 const noticias: Noticia[] = [
   {
     titulo:
+      "Gravidez, maternidade e os desafios de manter laços com os filhos, dentro de uma penitenciária",
+    data: "04 de julho de 2026",
+    href: "/noticias/gravidez-maternidade-penitenciaria",
+    resumo:
+      "Reportagem do TJPB retrata a realidade de mulheres grávidas e mães na Penitenciária Feminina Maria Júlia Maranhão, em João Pessoa, e o acompanhamento do Conselho da Comunidade.",
+    midia: {
+      tipo: "imagem",
+      src: "/gravidez-maternidade.png",
+      alt: "Mulheres e maternidade no sistema prisional",
+    },
+  },
+  {
+    titulo:
       "Visita técnica do CNJ à Paraíba destaca experiência com grupos reflexivos no sistema prisional",
     data: "Julho 2026",
     href: "/noticias/visita-cnj-paraiba",
@@ -60,19 +73,6 @@ const noticias: Noticia[] = [
       tipo: "imagem",
       src: "/acao-apoio-familiares-1.jpeg",
       alt: "Projeto LOTEP de acolhimento a familiares",
-    },
-  },
-  {
-    titulo:
-      "Conselho Gestor do FDD/PB aprova 12 projetos sociais voltados ao sistema prisional",
-    data: "2026",
-    href: "/noticias/fdd-projetos-sociais",
-    resumo:
-      "O Conselho Gestor do Fundo de Defesa dos Direitos Difusos da Paraíba aprovou 12 projetos sociais com foco na reinserção social, apoio a familiares e melhoria das condições do sistema prisional paraibano.",
-    midia: {
-      tipo: "imagem",
-      src: "/acao-apoio-familiares-2.jpeg",
-      alt: "Projetos sociais FDD/PB",
     },
   },
 ];
