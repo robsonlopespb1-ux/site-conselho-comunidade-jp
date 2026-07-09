@@ -44,7 +44,7 @@ export function AtuacaoCards({ items }: { items: WorkArea[] }) {
     <div className="mt-12">
       <div className="overflow-hidden">
         <div
-          className="flex"
+          className="flex min-h-[380px] sm:min-h-[360px] lg:min-h-[340px]"
           style={{
             transform: `translateX(-${atual * (100 / porTela)}%)`,
             transition: "transform 500ms ease-in-out",

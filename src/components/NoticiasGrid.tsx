@@ -136,8 +136,8 @@ export function NoticiasGrid() {
           </div>
         </div>
 
-        {/* Conteúdo abaixo da mídia — muda com o carrossel */}
-        <div className="p-5">
+        {/* Conteúdo abaixo da mídia — muda com o carrossel; min-h reserva a altura do slide mais alto (CNJ, com créditos) para o scroll não pular */}
+        <div className="min-h-[460px] p-5 sm:min-h-[340px] lg:min-h-[300px]">
           <p className="text-xs font-bold uppercase tracking-widest text-[#386c38] flex items-center gap-1">
             {ativa.midia.tipo === "video" ? "📹 Vídeo" : "📰 Notícia"}
           </p>
