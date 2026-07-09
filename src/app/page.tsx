@@ -15,31 +15,37 @@ const workAreas = [
     title: "Acompanhamento da execução penal",
     description:
       "Presença institucional voltada ao diálogo, à escuta social e ao acompanhamento das condições de cumprimento da pena.",
+    link: "#contato",
   },
   {
     title: "Apoio a familiares",
     description:
       "Acolhimento e orientação para famílias impactadas pelo sistema prisional, com encaminhamento à rede de proteção.",
+    link: "/noticias",
   },
   {
     title: "Atenção a egressos",
     description:
       "Articulação de oportunidades e serviços para fortalecer trajetórias de reinserção social e cidadania.",
+    link: "/noticias",
   },
   {
     title: "Projetos sociais",
     description:
       "Iniciativas comunitárias com foco em dignidade, documentação, capacitação, empregabilidade e vínculos familiares.",
+    link: "/noticias",
   },
   {
     title: "Articulação em rede",
     description:
       "Construção de pontes entre Judiciário, Executivo, Defensoria, Ministério Público e sociedade civil.",
+    link: "#parceiros",
   },
   {
     title: "Transparência institucional",
     description:
       "Comunicação pública sobre ações, projetos, parcerias, documentos e prestação de contas social.",
+    link: "#transparencia",
   },
 ];
 

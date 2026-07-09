@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { InfoCard } from "@/components/InfoCard";
 
 type WorkArea = {
   title: string;
   description: string;
+  link?: string;
 };
 
 export function AtuacaoCards({ items }: { items: WorkArea[] }) {
@@ -50,19 +52,40 @@ export function AtuacaoCards({ items }: { items: WorkArea[] }) {
             transition: "transform 500ms ease-in-out",
           }}
         >
-          {items.map((item, index) => (
-            <div
-              key={item.title}
-              className="flex-shrink-0 px-2.5"
-              style={{ width: `calc(100% / ${porTela})` }}
-            >
+          {items.map((item, index) => {
+            const card = (
               <InfoCard
                 index={index + 1}
                 title={item.title}
                 description={item.description}
               />
-            </div>
-          ))}
+            );
+
+            return (
+              <div
+                key={item.title}
+                className="flex-shrink-0 px-2.5"
+                style={{ width: `calc(100% / ${porTela})` }}
+              >
+                {item.link ? (
+                  item.link.startsWith("#") ? (
+                    <a href={item.link} className="block h-full cursor-pointer">
+                      {card}
+                    </a>
+                  ) : (
+                    <Link
+                      href={item.link}
+                      className="block h-full cursor-pointer"
+                    >
+                      {card}
+                    </Link>
+                  )
+                ) : (
+                  card
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
 
