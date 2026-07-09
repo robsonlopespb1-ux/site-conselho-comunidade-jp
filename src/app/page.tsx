@@ -118,11 +118,44 @@ const contactItems = [
     label: "E-mail",
     value: "conselhodacomunidadejp@gmail.com",
     href: "mailto:conselhodacomunidadejp@gmail.com",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+        className="mb-3 h-10 w-10 text-[#0f6bab]"
+      >
+        <rect x="2" y="4" width="20" height="16" rx="2" />
+        <path d="M22 4L12 13L2 4" />
+      </svg>
+    ),
   },
   {
     label: "Instagram",
     value: "@conselhodacomunidadejp",
     href: "https://www.instagram.com/conselhodacomunidadejp",
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+        className="mb-3 h-10 w-10 text-[#0f6bab]"
+      >
+        <rect x="2" y="2" width="20" height="20" rx="5" />
+        <circle cx="12" cy="12" r="5" />
+        <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
+      </svg>
+    ),
   },
 ];
 
@@ -312,8 +345,9 @@ export default function Home() {
                 {contactItems.map((item) => (
                   <div
                     key={item.label}
-                    className="rounded-sm border border-[#d8e2ea] bg-[#f4f6f8] p-6"
+                    className="flex flex-col items-center justify-center rounded-sm border border-[#d8e2ea] bg-[#f4f6f8] p-6 text-center"
                   >
+                    {item.icon}
                     <p className="text-sm font-semibold uppercase tracking-[0.12em] text-[#386c38]">
                       {item.label}
                     </p>
@@ -323,12 +357,12 @@ export default function Home() {
                         {...(item.href.startsWith("http")
                           ? { target: "_blank", rel: "noopener noreferrer" }
                           : {})}
-                        className="mt-3 block break-words text-lg font-semibold text-[#0f6bab] underline-offset-4 hover:underline"
+                        className="mt-3 block cursor-pointer break-all text-sm font-semibold text-[#0f6bab] underline-offset-4 hover:underline"
                       >
                         {item.value}
                       </a>
                     ) : (
-                      <p className="mt-3 text-lg font-semibold text-[#1f2933]">
+                      <p className="mt-3 text-sm font-semibold text-[#1f2933]">
                         {item.value}
                       </p>
                     )}
