@@ -6,6 +6,7 @@ import { AtuacaoCards } from "@/components/AtuacaoCards";
 import { BaseLegalCards } from "@/components/BaseLegalCards";
 import { FadeInSection } from "@/components/FadeInSection";
 import { NoticiasGrid } from "@/components/NoticiasGrid";
+import { ParceirosMarquee } from "@/components/ParceirosMarquee";
 import { Bia } from "@/components/Bia";
 import { Footer } from "@/components/Footer";
 
@@ -51,13 +52,21 @@ const initiatives = [
   "Ações de dignidade e reinserção social",
 ];
 
-const partnerItems = [
-  "Sistema de Justiça",
-  "Poder Público",
-  "Universidades",
-  "Empresas e iniciativa privada",
-  "Sociedade civil",
-  "Rede socioassistencial",
+const parceiros = [
+  { nome: "TJPB", logo: "tjpb-ok.png", altura: 72 },
+  { nome: "Ministério Público da Paraíba", logo: "mppb-ok.png", altura: 68 },
+  {
+    nome: "Defensoria Pública da Paraíba",
+    logo: "defensoria-ok.png",
+    altura: 72,
+  },
+  { nome: "SEAP/PB", logo: "seappb-ok.png", altura: 88 },
+  { nome: "Prefeitura de João Pessoa", logo: "joao-pessoa-ok.png", altura: 56 },
+  { nome: "Arquidiocese da Paraíba", logo: "arquidiocese.png", altura: 84 },
+  { nome: "Prima", logo: "prima-ok.png", altura: 84 },
+  { nome: "Universal", logo: "universal-ok.png", altura: 68 },
+  { nome: "Inovatec", logo: "inovatecok.png", altura: 60 },
+  { nome: "SECITEC", logo: "secitec.png", altura: 84 },
 ];
 
 const transparencyItems = [
@@ -249,27 +258,15 @@ export default function Home() {
         <FadeInSection>
         <section id="parceiros" className="bg-white py-20 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-              <SectionTitle
-                align="left"
-                eyebrow="Rede de apoio"
-                title="Parceiros e Rede de Apoio"
-                description="A atuação do Conselho é fortalecida por meio da articulação com instituições públicas, universidades, sociedade civil, empresas, organizações sociais e demais atores comprometidos com cidadania, dignidade e reinserção social."
-                descriptionClassName="text-justify"
-              />
-              <div className="grid gap-4 sm:grid-cols-2">
-                {partnerItems.map((item) => (
-                  <article
-                    key={item}
-                    className="rounded-sm border border-[#d8e2ea] bg-[#f4f6f8] p-6"
-                  >
-                    <div className="mb-5 h-1.5 w-12 rounded-full bg-[#0f6bab]" />
-                    <h3 className="text-lg font-semibold text-[#153f63]">
-                      {item}
-                    </h3>
-                  </article>
-                ))}
-              </div>
+            <SectionTitle
+              align="left"
+              eyebrow="Rede de apoio"
+              title="Parceiros e Rede de Apoio"
+              description="A atuação do Conselho é fortalecida por meio da articulação com instituições públicas, universidades, sociedade civil, empresas, organizações sociais e demais atores comprometidos com cidadania, dignidade e reinserção social."
+              descriptionClassName="text-justify"
+            />
+            <div className="mt-10">
+              <ParceirosMarquee parceiros={parceiros} />
             </div>
           </div>
         </section>
