@@ -110,6 +110,7 @@ const parceiros = [
     altura: 84,
     url: "https://www.instagram.com/secitec_jp/",
   },
+  { nome: "LOTEP", logo: "loteplogook.png", url: "https://lotep.pb.gov.br/" },
 ];
 
 const transparencyItems = [
