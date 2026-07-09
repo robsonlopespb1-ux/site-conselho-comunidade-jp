@@ -44,20 +44,66 @@ const workAreas = [
 ];
 
 const parceiros = [
-  { nome: "TJPB", logo: "tjpb-ok.png", altura: 72 },
-  { nome: "Ministério Público da Paraíba", logo: "mppb-ok.png", altura: 68 },
+  {
+    nome: "TJPB",
+    logo: "tjpb-ok.png",
+    altura: 72,
+    url: "https://www.tjpb.jus.br/",
+  },
+  {
+    nome: "Ministério Público da Paraíba",
+    logo: "mppb-ok.png",
+    altura: 68,
+    url: "https://www.mppb.mp.br/index.php/pt/",
+  },
   {
     nome: "Defensoria Pública da Paraíba",
     logo: "defensoria-ok.png",
     altura: 72,
+    url: "https://defensoria.pb.def.br/",
   },
-  { nome: "SEAP/PB", logo: "seappb-ok.png", altura: 88 },
-  { nome: "Prefeitura de João Pessoa", logo: "joao-pessoa-ok.png", altura: 56 },
-  { nome: "Arquidiocese da Paraíba", logo: "arquidiocese.png", altura: 84 },
-  { nome: "Prima", logo: "prima-ok.png", altura: 84 },
-  { nome: "Universal", logo: "universal-ok.png", altura: 68 },
-  { nome: "Inovatec", logo: "inovatecok.png", altura: 60 },
-  { nome: "SECITEC", logo: "secitec.png", altura: 84 },
+  {
+    nome: "SEAP/PB",
+    logo: "seappb-ok.png",
+    altura: 88,
+    url: "https://paraiba.pb.gov.br/diretas/secretaria-de-administracao-penitenciaria",
+  },
+  {
+    nome: "Prefeitura de João Pessoa",
+    logo: "joao-pessoa-ok.png",
+    altura: 56,
+    url: "https://www.joaopessoa.pb.gov.br/",
+  },
+  {
+    nome: "Arquidiocese da Paraíba",
+    logo: "arquidiocese.png",
+    altura: 84,
+    url: "https://arquidiocesepb.org.br/",
+  },
+  {
+    nome: "Prima",
+    logo: "prima-ok.png",
+    altura: 84,
+    url: "https://paraiba.pb.gov.br/diretas/secretaria-da-cultura/programas/prima",
+  },
+  {
+    nome: "Universal",
+    logo: "universal-ok.png",
+    altura: 68,
+    url: "https://www.universal.org/",
+  },
+  {
+    nome: "Inovatec",
+    logo: "inovatecok.png",
+    altura: 60,
+    url: "https://inovatecjp.com/",
+  },
+  {
+    nome: "SECITEC",
+    logo: "secitec.png",
+    altura: 84,
+    url: "https://www.instagram.com/secitec_jp/",
+  },
 ];
 
 const transparencyItems = [
