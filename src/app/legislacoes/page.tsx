@@ -45,6 +45,31 @@ const legislacoes = [
       "Dispõe sobre a obrigatoriedade das empresas vencedoras de licitações públicas no Estado da Paraíba de reservarem até 5% do total de vagas para sentenciados, promovendo a reinserção social pelo trabalho.",
     href: "https://drive.google.com/file/d/194lyILMGdDffXMdGX2nlyb6QrmP15Ftr/view?usp=sharing",
   },
+  {
+    title: "Resolução nº 34, de 24 de abril de 2024 — CNPCP",
+    description:
+      "Define diretrizes e recomendações referentes à assistência socioespiritual e à liberdade religiosa das pessoas privadas de liberdade.",
+    href: "https://drive.google.com/file/d/1zcR3PnysfYzBmcKsGY3xVzVS2jSMdmVE/view?usp=sharing",
+  },
+  {
+    title: "Declaração Universal dos Direitos Humanos",
+    description:
+      "Estabelece, pela primeira vez na história, os direitos fundamentais e as liberdades básicas que devem ser garantidos a todas as pessoas no mundo, sem qualquer tipo de discriminação.",
+    href: "https://drive.google.com/file/d/1kpROoDN-x0VxfW-UrYfPaG8TtF3GDCDl/view?usp=sharing",
+  },
+  {
+    title:
+      "Regras Mínimas das Nações Unidas para o Tratamento de Reclusos (Regras de Mandela)",
+    description:
+      "Definem que todos os presos devem ser tratados com dignidade. Proíbem a tortura, determinam que os Estados forneçam condições básicas de saúde, higiene e alimentação, e limitam o confinamento solitário.",
+    href: "https://drive.google.com/file/d/1MwSmWX66zhwpwMI693V__lg_uc6gRZH8/view?usp=sharing",
+  },
+  {
+    title: "Resolução nº 28, de 6 de outubro de 2022 — CNPCP",
+    description:
+      "Estabelece diretrizes para a realização de revista pessoal em estabelecimentos prisionais e veda a utilização de práticas vexatórias.",
+    href: "https://drive.google.com/file/d/1BBDRl0Ec7r9jspz9Nd4IeKXioYQ93dc6/view?usp=sharing",
+  },
 ];
 
 export default function LegislacoesPage() {
