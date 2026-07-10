@@ -47,7 +47,20 @@ Atribuições ampliadas pela Resolução:
 * Comunicar a Defensoria Pública quando constatar pessoa presa sem assistência jurídica
 * Contribuir para acesso à assistência médica, odontológica, religiosa e jurídica
 * Apoiar pessoas em cumprimento de penas em meio aberto
-=== RECONHECIMENTO === O Conselho da Comunidade de João Pessoa é reconhecido como entidade de Utilidade Pública pela Lei Estadual nº 11.673/2020, sancionada em 25 de março de 2020.`;
+=== RECONHECIMENTO === O Conselho da Comunidade de João Pessoa é reconhecido como entidade de Utilidade Pública pela Lei Estadual nº 11.673/2020, sancionada em 25 de março de 2020.
+=== MEMBROS DO CONSELHO DA COMUNIDADE ===
+
+* Thiago Robson — Presidente
+* Miguel Soares — Vice-Presidente
+* Cizia de Assis — Tesoureira
+* Andréa Arcoverde — Membro Nato
+* Carlos Neves — Membro Nato
+* Christiane — Membro
+* Cristiano — Membro
+* Lucena — Membro
+* Fábio — Membro
+=== REUNIÕES === O Conselho da Comunidade da Comarca de João Pessoa realiza reuniões ordinárias mensais nas dependências da Vara de Execução Penal da Capital, em datas previamente definidas e divulgadas aos seus membros.
+=== ATENDIMENTO AO PÚBLICO === O Conselho da Comunidade não possui expediente ou horário de funcionamento permanente. Os atendimentos são realizados exclusivamente mediante agendamento prévio, conforme a disponibilidade dos membros e a natureza da demanda. Para agendar, entre em contato pelo e-mail conselhodacomunidadejp@gmail.com ou pelo Instagram @conselhodacomunidadejp.`;
 
 type ChatMessage = {
   role: "user" | "assistant";
