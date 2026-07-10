@@ -114,10 +114,8 @@ const parceiros = [
 ];
 
 const transparencyItems = [
-  "Relatórios",
-  "Prestação de contas",
-  "Parceiros",
-  "Ações realizadas",
+  { label: "Relatórios", href: "/relatorios" },
+  { label: "Prestação de contas", href: "/prestacao-de-contas" },
 ];
 
 const contactItems = [
@@ -289,17 +287,17 @@ export default function Home() {
                     total clareza e acompanhamento dos resultados.
                   </p>
                 </div>
-                <div className="grid border-t border-white/20 bg-white/10 p-5 sm:grid-cols-2 lg:border-l lg:border-t-0">
+                <div className="grid grid-cols-1 gap-4 border-t border-white/20 bg-white/10 p-5 sm:grid-cols-2 lg:border-l lg:border-t-0">
                   {transparencyItems.map((item) => (
-                    <div
-                      key={item}
-                      className="border border-white/20 bg-white/10 p-5 text-white"
+                    <Link
+                      key={item.label}
+                      href={item.href}
+                      className="block cursor-pointer transition-transform duration-200 hover:scale-105"
                     >
-                      <span className="text-xs font-semibold uppercase tracking-[0.14em] text-blue-100">
-                        Futuro espaço
-                      </span>
-                      <h3 className="mt-3 text-lg font-semibold">{item}</h3>
-                    </div>
+                      <div className="flex h-full items-center border border-white/20 bg-white/10 p-5 text-white">
+                        <h3 className="text-lg font-semibold">{item.label}</h3>
+                      </div>
+                    </Link>
                   ))}
                 </div>
               </div>
