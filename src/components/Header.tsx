@@ -6,7 +6,6 @@ import { ContactButton } from "@/components/ContactButton";
 const navItems = [
   { label: "Início", href: "#inicio" },
   { label: "Notícias", href: "#noticias" },
-  { label: "Sobre", href: "#sobre" },
   { label: "Base Legal", href: "#base-legal" },
   { label: "Atuação", href: "#atuacao" },
   { label: "Parceiros", href: "#parceiros" },
