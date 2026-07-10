@@ -67,9 +67,6 @@ export function ParceirosMarquee({ parceiros }: ParceirosMarqueeProps) {
           })}
         </div>
       </div>
-      <p className="mt-8 text-center text-sm italic text-[#526170]">
-        E outros parceiros institucionais
-      </p>
     </div>
   );
 }
