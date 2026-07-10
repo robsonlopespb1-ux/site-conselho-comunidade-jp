@@ -9,6 +9,7 @@ const navItems = [
   { label: "Base Legal", href: "#base-legal" },
   { label: "Atuação", href: "#atuacao" },
   { label: "Parceiros", href: "#parceiros" },
+  { label: "Doações", href: "#doacoes" },
   { label: "Transparência", href: "#transparencia" },
   { label: "Enviar Relato", href: "#enviar-relato" },
   { label: "Contato", href: "#contato" },

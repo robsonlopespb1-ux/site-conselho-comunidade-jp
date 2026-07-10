@@ -269,6 +269,35 @@ export default function Home() {
         </FadeInSection>
 
         <FadeInSection>
+        <section
+          id="doacoes"
+          className="border-t border-[#d8e2ea] bg-white py-16 lg:py-24"
+        >
+          <div className="mx-auto max-w-6xl px-4 text-center lg:px-8">
+            <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-[#386c38]">
+              Doações
+            </p>
+            <h2 className="mb-4 text-2xl font-bold text-[#153f63] lg:text-4xl">
+              Invista em dignidade. Transforme vidas.
+            </h2>
+            <div className="mx-auto mt-2 mb-8 h-1 w-16 bg-[#e5b42b]" />
+            <p className="mx-auto mb-10 max-w-3xl text-base leading-relaxed text-[#344555] lg:text-lg">
+              Cada contribuição fortalece a dignidade e os direitos de quem
+              cumpre pena e de suas famílias. Sua doação financia ações
+              concretas de acolhimento, cidadania e reinserção social
+              promovidas pelo Conselho da Comunidade da Comarca de João Pessoa.
+            </p>
+            <Link
+              href="/doacoes"
+              className="inline-block rounded-lg bg-[#0f6bab] px-8 py-4 text-lg font-semibold text-white transition-colors duration-200 hover:bg-[#153f63]"
+            >
+              Doe Agora
+            </Link>
+          </div>
+        </section>
+        </FadeInSection>
+
+        <FadeInSection>
         <section id="transparencia" className="py-14 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="overflow-hidden rounded-sm border border-[#cdd9e4] bg-[#0f6bab] shadow-sm">
