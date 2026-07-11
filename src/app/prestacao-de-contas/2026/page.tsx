@@ -74,10 +74,10 @@ function NotasFiscaisJunho() {
             Itens adquiridos:
           </p>
           <ul className="list-inside list-disc space-y-1 text-sm text-[#344555]">
-            <li>30 unidades — Vergalhão 1/4 CA 50 6,3m</li>
+            <li>8 unidades — Vergalhão 1/4 CA 50 6,3m 12mt — Aço B.</li>
             <li>Madeira Maçaranduba 3x4 (peças)</li>
             <li>Madeira Maçaranduba 3x3 (peças)</li>
-            <li>430 unidades — Tijolo 8 furos 9x19x19</li>
+            <li>630 unidades — Tijolo 8 furos 9x19x19</li>
           </ul>
         </div>
 
