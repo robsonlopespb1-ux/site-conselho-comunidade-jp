@@ -24,7 +24,140 @@ const meses = [
 
 // Meses que possuem documentos publicados — inclua o mês aqui e adicione a
 // condição correspondente no map para o card aparecer dentro do <details>.
-const mesesComNotas = ["Julho"];
+const mesesComNotas = ["Junho", "Julho"];
+
+function NotasFiscaisJunho() {
+  return (
+    <>
+      <div className="mb-6 rounded-lg border border-[#d8e2ea] bg-[#f4f6f8] p-6">
+        <div className="mb-3 flex items-center gap-2">
+          <span className="rounded-full bg-[#0f6bab] px-3 py-1 text-xs font-semibold uppercase tracking-widest text-white">
+            Nota Fiscal
+          </span>
+        </div>
+
+        <h3 className="mb-2 text-lg font-bold text-[#153f63]">
+          Aquisição de materiais de construção — madeira, tijolos e vergalhão
+        </h3>
+
+        <p className="mb-4 text-sm text-[#526170]">
+          Para construção de área externa de acolhimento para familiares de
+          mulheres privadas de liberdade na Penitenciária Feminina de João
+          Pessoa.
+        </p>
+
+        <div className="mb-4 rounded-lg border border-[#d8e2ea] bg-white p-4">
+          <div className="grid grid-cols-1 gap-3 text-sm text-[#344555] sm:grid-cols-3">
+            <div>
+              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-[#526170]">
+                NF-e
+              </p>
+              <p>Nº 28758</p>
+            </div>
+            <div>
+              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-[#526170]">
+                Data de Emissão
+              </p>
+              <p>11/06/2026</p>
+            </div>
+            <div>
+              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-[#526170]">
+                Valor Total
+              </p>
+              <p className="font-bold text-[#153f63]">R$ 3.040,00</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-4">
+          <p className="mb-2 text-sm font-semibold text-[#344555]">
+            Itens adquiridos:
+          </p>
+          <ul className="list-inside list-disc space-y-1 text-sm text-[#344555]">
+            <li>30 unidades — Vergalhão 1/4 CA 50 6,3m</li>
+            <li>Madeira Maçaranduba 3x4 (peças)</li>
+            <li>Madeira Maçaranduba 3x3 (peças)</li>
+            <li>430 unidades — Tijolo 8 furos 9x19x19</li>
+          </ul>
+        </div>
+
+        <a
+          href="https://drive.google.com/file/d/10e7JJxBjsN9NpC37GHZBUwMHWVtwfIQx/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-[#0f6bab] hover:underline"
+        >
+          📄 Ver nota fiscal completa (PDF)
+        </a>
+      </div>
+
+      <div className="rounded-lg border border-[#d8e2ea] bg-[#f4f6f8] p-6">
+        <div className="mb-3 flex items-center gap-2">
+          <span className="rounded-full bg-[#0f6bab] px-3 py-1 text-xs font-semibold uppercase tracking-widest text-white">
+            Nota Fiscal
+          </span>
+        </div>
+
+        <h3 className="mb-2 text-lg font-bold text-[#153f63]">
+          Aquisição de materiais de construção — telhas, cerâmica, tubulação e
+          acabamento
+        </h3>
+
+        <p className="mb-4 text-sm text-[#526170]">
+          Para construção de área externa de acolhimento para familiares de
+          mulheres privadas de liberdade na Penitenciária Feminina de João
+          Pessoa.
+        </p>
+
+        <div className="mb-4 rounded-lg border border-[#d8e2ea] bg-white p-4">
+          <div className="grid grid-cols-1 gap-3 text-sm text-[#344555] sm:grid-cols-3">
+            <div>
+              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-[#526170]">
+                NF-e
+              </p>
+              <p>Nº 3262</p>
+            </div>
+            <div>
+              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-[#526170]">
+                Data de Emissão
+              </p>
+              <p>11/06/2026</p>
+            </div>
+            <div>
+              <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-[#526170]">
+                Valor Total
+              </p>
+              <p className="font-bold text-[#153f63]">R$ 3.310,00</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-4">
+          <p className="mb-2 text-sm font-semibold text-[#344555]">
+            Itens adquiridos:
+          </p>
+          <ul className="list-inside list-disc space-y-1 text-sm text-[#344555]">
+            <li>52 peças — Telha Brasilit 2,44 x 0,50 4mm</li>
+            <li>2 pacotes — Prego Telheiro 18x30 500g</li>
+            <li>Cerâmica Carrara Estatuário 60x60 Comercial</li>
+            <li>Cola Acit 15Kg</li>
+            <li>Rejunte Silicone 1Kg CE Platina</li>
+            <li>Canos ESG 100mm e 150mm (tubulação hidráulica)</li>
+          </ul>
+        </div>
+
+        <a
+          href="https://drive.google.com/file/d/1Tf9x8SUWMboz8f0FwIJ2U43oSOY3OO8N/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-[#0f6bab] hover:underline"
+        >
+          📄 Ver nota fiscal completa (PDF)
+        </a>
+      </div>
+    </>
+  );
+}
 
 function NotaFiscalJulho() {
   return (
@@ -127,6 +260,7 @@ export default function PrestacaoDeContas2026Page() {
                 </span>
               </summary>
               <div className="mt-4 pl-2">
+                {mes === "Junho" ? <NotasFiscaisJunho /> : null}
                 {mes === "Julho" ? <NotaFiscalJulho /> : null}
               </div>
             </details>
