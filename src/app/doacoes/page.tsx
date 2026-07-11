@@ -97,6 +97,20 @@ export default function DoacoesPage() {
             <span className="font-semibold">Titular:</span> Conselho da
             Comunidade da Comarca de João Pessoa/PB
           </p>
+
+          <div className="my-5 h-px bg-[#d8e2ea]" />
+
+          <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-[#386c38]">
+            QR Code PIX
+          </p>
+          <img
+            src="/qrcode-doacoes.jpeg"
+            alt="QR Code para doação via PIX"
+            className="mx-auto h-48 w-48 rounded-lg border border-[#d8e2ea]"
+          />
+          <p className="mt-3 text-sm text-[#526170]">
+            Escaneie com o aplicativo do seu banco para doar via PIX
+          </p>
         </div>
       </div>
     </main>
