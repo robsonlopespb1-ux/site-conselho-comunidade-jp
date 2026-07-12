@@ -133,14 +133,14 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="main-nav-link shrink-0 whitespace-nowrap py-2 text-white transition-colors hover:text-[#e5b42b] lg:py-0"
+                className="main-nav-link shrink-0 whitespace-nowrap py-3 text-white transition-colors hover:text-[#e5b42b] lg:py-0"
               >
                 {item.label}
               </Link>
             ))}
           </nav>
 
-          <ContactButton className="shrink-0 whitespace-nowrap rounded-lg bg-white px-4 py-2 text-sm font-semibold text-[#0f6bab] transition-colors hover:bg-[#e5b42b] hover:text-white focus:outline-none focus:ring-2 focus:ring-white/70 focus:ring-offset-2 focus:ring-offset-[#0f6bab]">
+          <ContactButton className="shrink-0 whitespace-nowrap rounded-lg bg-white px-4 py-3 text-sm font-semibold text-[#0f6bab] transition-colors hover:bg-[#e5b42b] hover:text-white focus:outline-none focus:ring-2 focus:ring-white/70 focus:ring-offset-2 focus:ring-offset-[#0f6bab] lg:py-2">
             Fale com o Conselho
           </ContactButton>
         </div>

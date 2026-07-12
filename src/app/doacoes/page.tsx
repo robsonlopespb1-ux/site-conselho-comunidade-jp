@@ -26,7 +26,7 @@ export default function DoacoesPage() {
         </h1>
         <div className="mt-2 mb-8 h-1 w-16 bg-[#e5b42b]" />
 
-        <blockquote className="mx-auto mb-10 max-w-3xl border-l-4 border-[#e5b42b] py-2 pl-6 text-center text-xl font-semibold italic text-[#153f63] lg:text-2xl">
+        <blockquote className="mx-auto mb-10 max-w-3xl border-l-4 border-[#e5b42b] py-2 pl-6 text-center text-lg font-semibold italic text-[#153f63] sm:text-xl lg:text-2xl">
           &ldquo;Investir em dignidade é transformar vidas — dentro e fora do
           sistema prisional.&rdquo;
         </blockquote>
@@ -50,7 +50,7 @@ export default function DoacoesPage() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-[#386c38]">
             Fundamentação Legal
           </p>
-          <p className="leading-relaxed italic text-[#344555] text-justify">
+          <p className="text-sm leading-relaxed italic text-[#344555] text-justify sm:text-base">
             Conforme previsto na Resolução CNJ nº 488/2023, art. 13, parágrafo
             único: &ldquo;Os Conselhos da Comunidade poderão receber valores
             decorrentes de fundos federais, estaduais e municipais de políticas

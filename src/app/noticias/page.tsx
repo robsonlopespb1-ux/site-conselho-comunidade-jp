@@ -167,7 +167,7 @@ export default function NoticiasPage() {
         {/* Barra de filtros */}
         <div className="mt-10 mb-8 rounded-lg border border-[#d8e2ea] bg-[#f4f6f8] p-4">
           <div className="flex flex-wrap items-end gap-4">
-            <div>
+            <div className="w-full sm:w-auto">
               <label
                 htmlFor="filtro-data-inicio"
                 className="mb-1 block text-xs font-semibold uppercase text-[#526170]"
@@ -179,10 +179,10 @@ export default function NoticiasPage() {
                 type="date"
                 value={dataInicio}
                 onChange={(event) => setDataInicio(event.target.value)}
-                className={inputDataClass}
+                className={`w-full sm:w-auto ${inputDataClass}`}
               />
             </div>
-            <div>
+            <div className="w-full sm:w-auto">
               <label
                 htmlFor="filtro-data-fim"
                 className="mb-1 block text-xs font-semibold uppercase text-[#526170]"
@@ -194,10 +194,10 @@ export default function NoticiasPage() {
                 type="date"
                 value={dataFim}
                 onChange={(event) => setDataFim(event.target.value)}
-                className={inputDataClass}
+                className={`w-full sm:w-auto ${inputDataClass}`}
               />
             </div>
-            <div>
+            <div className="w-full sm:w-auto">
               <label
                 htmlFor="filtro-busca"
                 className="mb-1 block text-xs font-semibold uppercase text-[#526170]"
@@ -210,19 +210,19 @@ export default function NoticiasPage() {
                 placeholder="Buscar..."
                 value={busca}
                 onChange={(event) => setBusca(event.target.value)}
-                className="w-48 rounded-lg border border-[#d8e2ea] px-3 py-2 text-sm text-[#344555] focus:outline-none focus:ring-2 focus:ring-[#0f6bab]"
+                className="w-full rounded-lg border border-[#d8e2ea] px-3 py-2 text-sm text-[#344555] focus:outline-none focus:ring-2 focus:ring-[#0f6bab] sm:w-48"
               />
             </div>
             <button
               type="button"
-              className="flex items-center gap-2 rounded-lg bg-[#0f6bab] px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#153f63]"
+              className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#0f6bab] px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#153f63] sm:w-auto"
             >
               🔍 Buscar
             </button>
             <button
               type="button"
               onClick={limparFiltros}
-              className="text-sm text-[#526170] underline hover:text-[#0f6bab]"
+              className="w-full py-2 text-center text-sm text-[#526170] underline hover:text-[#0f6bab] sm:w-auto sm:py-0 sm:text-left"
             >
               Limpar
             </button>

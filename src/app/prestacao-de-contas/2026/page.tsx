@@ -85,7 +85,7 @@ function NotasFiscaisJunho() {
           href="https://drive.google.com/file/d/10e7JJxBjsN9NpC37GHZBUwMHWVtwfIQx/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-[#0f6bab] hover:underline"
+          className="inline-flex items-center gap-2 py-2 text-sm font-semibold text-[#0f6bab] hover:underline lg:py-0"
         >
           📄 Ver nota fiscal completa (PDF)
         </a>
@@ -150,7 +150,7 @@ function NotasFiscaisJunho() {
           href="https://drive.google.com/file/d/1Tf9x8SUWMboz8f0FwIJ2U43oSOY3OO8N/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-[#0f6bab] hover:underline"
+          className="inline-flex items-center gap-2 py-2 text-sm font-semibold text-[#0f6bab] hover:underline lg:py-0"
         >
           📄 Ver nota fiscal completa (PDF)
         </a>
@@ -215,7 +215,7 @@ function NotaFiscalJulho() {
         href="https://drive.google.com/file/d/11wn30jKA8S3N_Df8W3KDxXvssvmSubRI/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 text-sm font-semibold text-[#0f6bab] hover:underline"
+        className="inline-flex items-center gap-2 py-2 text-sm font-semibold text-[#0f6bab] hover:underline lg:py-0"
       >
         📄 Ver nota fiscal completa (PDF)
       </a>
