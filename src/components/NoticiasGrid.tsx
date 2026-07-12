@@ -15,6 +15,8 @@ type Noticia = {
   href: string;
   resumo: string;
   midia: Midia;
+  /** Classe object-position do corte da imagem no destaque (ex.: "object-top"). Padrão: centralizado. */
+  imagemPosicao?: string;
   creditos?: {
     fonte: Credito;
     igFonte: Credito;
@@ -35,6 +37,7 @@ const noticias: Noticia[] = [
       src: "/castelo-bonecas.jpeg",
       alt: "Artesãs do Castelo de Bonecas com os mascotes SUSi e PegaSUS",
     },
+    imagemPosicao: "object-top",
   },
   {
     titulo:
@@ -96,7 +99,7 @@ export function NoticiasGrid() {
             <img
               src={ativa.midia.src}
               alt={ativa.midia.alt}
-              className="w-full h-full object-cover"
+              className={`w-full h-full object-cover ${ativa.imagemPosicao || ""}`}
             />
           )}
 
