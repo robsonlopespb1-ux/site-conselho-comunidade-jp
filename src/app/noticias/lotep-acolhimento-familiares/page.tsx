@@ -44,9 +44,10 @@ export default function LotepAcolhimentoFamiliaresPage() {
 
         <p className="mt-8 text-justify leading-relaxed text-[#344555]">
           Iniciativa promovida pela Loteria do Estado da Paraíba debateu
-          estratégias de acolhimento e suporte psicossocial para familiares de
-          mulheres privadas de liberdade, articulando parcerias com a rede de
-          proteção social de João Pessoa.
+          estratégias de acolhimento e suporte estrutural para familiares de
+          mulheres privadas de liberdade, incluindo a construção de uma área
+          de acolhimento, em articulação com a rede de proteção social de João
+          Pessoa.
         </p>
 
         <a

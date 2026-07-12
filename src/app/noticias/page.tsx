@@ -64,7 +64,7 @@ const noticias: Noticia[] = [
     titulo:
       "LOTEP discute projeto de acolhimento para familiares de internas do Presídio Feminino de João Pessoa",
     resumo:
-      "Iniciativa promovida pela Loteria do Estado da Paraíba debateu estratégias de acolhimento e suporte psicossocial para familiares de mulheres privadas de liberdade.",
+      "Iniciativa promovida pela Loteria do Estado da Paraíba debateu estratégias de acolhimento e suporte estrutural para familiares de mulheres privadas de liberdade.",
     href: "/noticias/lotep-acolhimento-familiares",
   },
   {
