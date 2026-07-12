@@ -96,7 +96,7 @@ export function Header() {
                 width={112}
                 height={92}
                 priority
-                className="h-16 w-auto object-contain lg:h-20"
+                className="h-20 w-auto object-contain lg:h-24 xl:h-28"
               />
             ) : (
               <span className="flex h-16 w-16 items-center justify-center rounded-sm bg-[#0f6bab] text-sm font-bold text-white">
@@ -104,10 +104,10 @@ export function Header() {
               </span>
             )}
             <span className="min-w-0">
-              <span className="block text-base font-bold leading-6 text-[#153f63] lg:text-lg">
+              <span className="block text-lg font-bold leading-6 text-[#153f63] lg:text-xl">
                 Conselho da Comunidade
               </span>
-              <span className="block text-xs text-[#526170] lg:text-sm">
+              <span className="block text-sm text-[#526170] lg:text-base">
                 Comarca de João Pessoa/PB
               </span>
             </span>
