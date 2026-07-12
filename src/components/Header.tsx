@@ -117,7 +117,7 @@ export function Header() {
             src="/ilustracaojoaopessoa.png"
             alt=""
             aria-hidden="true"
-            className="pointer-events-none ml-auto hidden h-28 w-auto max-w-[60%] select-none object-contain md:block lg:h-36 lg:max-w-[55%] xl:h-40"
+            className="pointer-events-none ml-auto hidden h-28 w-auto max-w-[60%] select-none object-contain mix-blend-multiply md:block lg:h-36 lg:max-w-[55%] xl:h-40"
           />
         </div>
       </div>
