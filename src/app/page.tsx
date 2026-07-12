@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
 import { AtuacaoCards } from "@/components/AtuacaoCards";
@@ -8,7 +7,6 @@ import { FadeInSection } from "@/components/FadeInSection";
 import { NoticiasGrid } from "@/components/NoticiasGrid";
 import { ParceirosMarquee } from "@/components/ParceirosMarquee";
 import { Bia } from "@/components/Bia";
-import { Footer } from "@/components/Footer";
 
 const workAreas = [
   {
@@ -167,7 +165,6 @@ const contactItems = [
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#f4f6f8] text-[#1f2933]">
-      <Header />
       <main>
         <Hero />
 
@@ -408,7 +405,6 @@ export default function Home() {
         </section>
         </FadeInSection>
       </main>
-      <Footer />
       <Bia />
     </div>
   );

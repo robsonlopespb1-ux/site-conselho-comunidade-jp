@@ -1,18 +1,19 @@
 import Image from "next/image";
+import Link from "next/link";
 import fs from "node:fs";
 import path from "node:path";
 import { ContactButton } from "@/components/ContactButton";
 
 const navItems = [
-  { label: "Início", href: "#inicio" },
-  { label: "Notícias", href: "#noticias" },
-  { label: "Base Legal", href: "#base-legal" },
-  { label: "Atuação", href: "#atuacao" },
-  { label: "Parceiros", href: "#parceiros" },
-  { label: "Doações", href: "#doacoes" },
-  { label: "Transparência", href: "#transparencia" },
-  { label: "Enviar Relato", href: "#enviar-relato" },
-  { label: "Contato", href: "#contato" },
+  { label: "Início", href: "/#inicio" },
+  { label: "Notícias", href: "/#noticias" },
+  { label: "Base Legal", href: "/#base-legal" },
+  { label: "Atuação", href: "/#atuacao" },
+  { label: "Parceiros", href: "/#parceiros" },
+  { label: "Doações", href: "/#doacoes" },
+  { label: "Transparência", href: "/#transparencia" },
+  { label: "Enviar Relato", href: "/#enviar-relato" },
+  { label: "Contato", href: "/#contato" },
 ];
 
 const socialLinks = [
@@ -81,7 +82,7 @@ export function Header() {
         </div>
       </div>
       <div className="mx-auto flex max-w-7xl flex-col items-stretch justify-between gap-4 px-6 py-4 sm:flex-row sm:items-center lg:px-8">
-        <a href="#inicio" className="flex min-w-0 items-center gap-3">
+        <Link href="/#inicio" className="flex min-w-0 items-center gap-3">
           {logoAvailable ? (
             <Image
               src="/logo-conselho.png"
@@ -102,20 +103,20 @@ export function Header() {
               João Pessoa/PB
             </span>
           </span>
-        </a>
+        </Link>
 
         <nav
           aria-label="Navegação principal"
           className="flex items-center gap-x-3 gap-y-2 overflow-x-auto text-sm font-semibold text-[#344555] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden lg:flex-wrap lg:justify-center lg:overflow-visible xl:gap-x-4"
         >
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.href}
               href={item.href}
               className="main-nav-link shrink-0 whitespace-nowrap py-3 hover:text-[#0f6bab] lg:py-0"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 

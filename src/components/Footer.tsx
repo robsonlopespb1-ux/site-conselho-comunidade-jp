@@ -49,7 +49,7 @@ export function Footer() {
                 className="mt-4 flex flex-col gap-2 text-sm"
               >
                 <a
-                  href="#contato"
+                  href="/#contato"
                   className="py-1.5 text-blue-50 underline-offset-4 transition hover:text-white hover:underline lg:py-0"
                 >
                   Contato

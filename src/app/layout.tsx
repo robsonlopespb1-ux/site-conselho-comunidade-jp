@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ClientLayout } from "@/components/ClientLayout";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Conselho da Comunidade da Comarca de João Pessoa/PB",
@@ -38,7 +40,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="h-full antialiased" data-scroll-behavior="smooth">
       <body className="min-h-full flex flex-col">
-        <ClientLayout>{children}</ClientLayout>
+        <ClientLayout>
+          <Header />
+          {children}
+          <Footer />
+        </ClientLayout>
       </body>
     </html>
   );
