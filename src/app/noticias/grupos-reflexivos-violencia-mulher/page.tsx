@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ShareButtons } from "@/components/ShareButtons";
+import { NoticiasSidebar } from "@/components/NoticiasSidebar";
 
 export const metadata: Metadata = {
   title:
@@ -11,7 +13,9 @@ export const metadata: Metadata = {
 export default function GruposReflexivosViolenciaMulherPage() {
   return (
     <main className="bg-white">
-      <div className="max-w-3xl mx-auto px-6 py-16">
+      <div className="max-w-6xl mx-auto px-6 py-16">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_320px]">
+          <div>
         <Link
           href="/noticias"
           className="text-sm font-semibold text-[#0f6bab] underline-offset-4 transition hover:underline"
@@ -26,8 +30,11 @@ export default function GruposReflexivosViolenciaMulherPage() {
           Grupos reflexivos sobre violência contra a mulher na Penitenciária
           Silvio Porto
         </h1>
-        <p className="mt-3 text-sm text-[#526170]">10 de julho de 2026</p>
-        <div className="mt-5 h-1.5 w-16 rounded-full bg-[#e5b42b]" />
+        <div className="mb-6 mt-3 flex flex-wrap items-center justify-between gap-4">
+          <p className="text-sm text-[#526170]">10 de julho de 2026</p>
+          <ShareButtons titulo="Grupos reflexivos sobre violência contra a mulher na Penitenciária Silvio Porto" />
+        </div>
+        <div className="h-1.5 w-16 rounded-full bg-[#e5b42b]" />
 
         <img
           src="/grupos-reflexivos.jpeg"
@@ -78,6 +85,10 @@ export default function GruposReflexivosViolenciaMulherPage() {
           >
             Fale com o Conselho
           </Link>
+        </div>
+          </div>
+
+          <NoticiasSidebar slugAtual="grupos-reflexivos-violencia-mulher" />
         </div>
       </div>
     </main>
