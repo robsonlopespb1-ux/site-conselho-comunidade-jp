@@ -14,6 +14,15 @@ type Noticia = {
 
 const noticias: Noticia[] = [
   {
+    imagem: "/castelo-bonecas.jpeg",
+    data: "10 de julho de 2026",
+    titulo:
+      "Castelo de Bonecas: mulheres do sistema prisional produzem os mascotes oficiais do SUS",
+    resumo:
+      "Artesãs da Penitenciária Feminina Maria Júlia Maranhão confeccionaram os novos mascotes do Sistema Único de Saúde, SUSi e PegaSUS, em projeto do Emprega Lab do CNJ que promove inclusão sociolaboral.",
+    href: "/noticias/castelo-bonecas-mascotes-sus",
+  },
+  {
     imagem: "/mutirao-documentacao.jpeg",
     data: "10 de julho de 2026",
     titulo:

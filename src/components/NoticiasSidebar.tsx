@@ -7,6 +7,13 @@ type NoticiasSidebarProps = {
 const todasNoticias = [
   {
     titulo:
+      "Castelo de Bonecas: mulheres do sistema prisional produzem os mascotes oficiais do SUS",
+    data: "10/07/2026",
+    imagem: "/castelo-bonecas.jpeg",
+    slug: "castelo-bonecas-mascotes-sus",
+  },
+  {
+    titulo:
       "Mutirão de documentação na Penitenciária Desembargador Silvio Porto",
     data: "10/07/2026",
     imagem: "/mutirao-documentacao.jpeg",

@@ -25,6 +25,19 @@ type Noticia = {
 const noticias: Noticia[] = [
   {
     titulo:
+      "Castelo de Bonecas: mulheres do sistema prisional produzem os mascotes oficiais do SUS",
+    data: "10 de julho de 2026",
+    href: "/noticias/castelo-bonecas-mascotes-sus",
+    resumo:
+      "Artesãs da Penitenciária Feminina Maria Júlia Maranhão confeccionaram os novos mascotes do Sistema Único de Saúde, SUSi e PegaSUS, em projeto do Emprega Lab do CNJ que promove inclusão sociolaboral.",
+    midia: {
+      tipo: "imagem",
+      src: "/castelo-bonecas.jpeg",
+      alt: "Artesãs do Castelo de Bonecas com os mascotes SUSi e PegaSUS",
+    },
+  },
+  {
+    titulo:
       "Mutirão de documentação na Penitenciária Desembargador Silvio Porto",
     data: "10 de julho de 2026",
     href: "/noticias/mutirao-documentacao-silvio-porto",
@@ -47,19 +60,6 @@ const noticias: Noticia[] = [
       tipo: "imagem",
       src: "/grupos-reflexivos.jpeg",
       alt: "Sessão de grupos reflexivos sobre violência contra a mulher",
-    },
-  },
-  {
-    titulo:
-      "Gravidez, maternidade e os desafios de manter laços com os filhos, dentro de uma penitenciária",
-    data: "04 de julho de 2026",
-    href: "/noticias/gravidez-maternidade-penitenciaria",
-    resumo:
-      "Reportagem do TJPB retrata a realidade de mulheres grávidas e mães na Penitenciária Feminina Maria Júlia Maranhão, em João Pessoa, e o acompanhamento do Conselho da Comunidade.",
-    midia: {
-      tipo: "imagem",
-      src: "/gravidez-maternidade.png",
-      alt: "Mulheres e maternidade no sistema prisional",
     },
   },
 ];
