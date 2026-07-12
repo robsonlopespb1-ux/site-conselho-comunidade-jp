@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense, useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 
 type Noticia = {
@@ -111,21 +112,38 @@ function parseDataInput(valor: string): Date {
   return new Date(ano, mes - 1, dia);
 }
 
+/** Minúsculas e sem acentos — "mutirao" encontra "Mutirão". */
+function normalizar(texto: string): string {
+  return texto
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "");
+}
+
 const inputDataClass =
   "border border-[#d8e2ea] rounded-lg px-3 py-2 text-sm text-[#344555] focus:outline-none focus:ring-2 focus:ring-[#0f6bab]";
 
-export default function NoticiasPage() {
-  const [busca, setBusca] = useState("");
+function NoticiasContent() {
+  const searchParams = useSearchParams();
+  const buscaParam = searchParams.get("busca") ?? "";
+
+  const [busca, setBusca] = useState(buscaParam);
   const [dataInicio, setDataInicio] = useState("");
   const [dataFim, setDataFim] = useState("");
 
-  const termo = busca.trim().toLowerCase();
+  // Sincroniza o filtro quando a URL muda (ex.: busca feita pelo Header
+  // enquanto o usuário já está em /noticias).
+  useEffect(() => {
+    setBusca(buscaParam);
+  }, [buscaParam]);
+
+  const termo = normalizar(busca.trim());
 
   const filtradas = noticias.filter((noticia) => {
     if (
       termo &&
-      !noticia.titulo.toLowerCase().includes(termo) &&
-      !noticia.resumo.toLowerCase().includes(termo)
+      !normalizar(noticia.titulo).includes(termo) &&
+      !normalizar(noticia.resumo).includes(termo)
     ) {
       return false;
     }
@@ -277,5 +295,14 @@ export default function NoticiasPage() {
         </p>
       </div>
     </main>
+  );
+}
+
+// useSearchParams exige um Suspense boundary no prerender do App Router.
+export default function NoticiasPage() {
+  return (
+    <Suspense fallback={null}>
+      <NoticiasContent />
+    </Suspense>
   );
 }

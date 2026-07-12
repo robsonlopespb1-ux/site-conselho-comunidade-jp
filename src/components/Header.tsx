@@ -3,6 +3,7 @@ import Link from "next/link";
 import fs from "node:fs";
 import path from "node:path";
 import { ContactButton } from "@/components/ContactButton";
+import { HeaderSearch } from "@/components/HeaderSearch";
 
 const navItems = [
   { label: "Início", href: "/#inicio" },
@@ -87,7 +88,7 @@ export function Header() {
 
       {/* CAMADA 2: Masthead institucional — NÃO sticky */}
       <div className="border-b border-[#d8e2ea] bg-white py-4 lg:py-6">
-        <div className="mx-auto flex max-w-7xl items-center px-4">
+        <div className="mx-auto flex max-w-7xl items-center gap-4 px-4">
           <Link href="/#inicio" className="flex min-w-0 shrink-0 items-center gap-3">
             {logoAvailable ? (
               <Image
@@ -113,12 +114,16 @@ export function Header() {
             </span>
           </Link>
 
-          <img
-            src="/ilustracaojoaopessoa.png"
-            alt=""
-            aria-hidden="true"
-            className="pointer-events-none ml-auto hidden h-28 w-auto max-w-[60%] select-none object-contain mix-blend-multiply md:block lg:h-36 lg:max-w-[55%] xl:h-40"
-          />
+          <div className="hidden min-w-0 flex-1 justify-center md:flex">
+            <img
+              src="/ilustracaojoaopessoa.png"
+              alt=""
+              aria-hidden="true"
+              className="pointer-events-none h-28 w-auto max-w-full select-none object-contain mix-blend-multiply lg:h-36 xl:h-40"
+            />
+          </div>
+
+          <HeaderSearch />
         </div>
       </div>
 
