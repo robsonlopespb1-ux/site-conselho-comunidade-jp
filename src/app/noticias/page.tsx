@@ -10,6 +10,24 @@ export const metadata: Metadata = {
 
 const noticias = [
   {
+    imagem: "/mutirao-documentacao.jpeg",
+    data: "10 de julho de 2026",
+    titulo:
+      "Mutirão de documentação na Penitenciária Desembargador Silvio Porto",
+    resumo:
+      "Ação integrada com o Instituto de Polícia Científica e a Receita Federal garantiu emissão de documentos para pessoas privadas de liberdade, dando continuidade aos mutirões nos presídios.",
+    href: "/noticias/mutirao-documentacao-silvio-porto",
+  },
+  {
+    imagem: "/grupos-reflexivos.jpeg",
+    data: "10 de julho de 2026",
+    titulo:
+      "Grupos reflexivos sobre violência contra a mulher na Penitenciária Silvio Porto",
+    resumo:
+      "Sessão introdutória de comunicação não violenta reuniu parte dos noivos do casamento coletivo, em trabalho conjunto que gera impactos positivos para a comunidade penal.",
+    href: "/noticias/grupos-reflexivos-violencia-mulher",
+  },
+  {
     imagem: "/gravidez-maternidade.png",
     data: "04 de julho de 2026",
     titulo:

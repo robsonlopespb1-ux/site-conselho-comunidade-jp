@@ -25,6 +25,32 @@ type Noticia = {
 const noticias: Noticia[] = [
   {
     titulo:
+      "Mutirão de documentação na Penitenciária Desembargador Silvio Porto",
+    data: "10 de julho de 2026",
+    href: "/noticias/mutirao-documentacao-silvio-porto",
+    resumo:
+      "Ação integrada com o Instituto de Polícia Científica e a Receita Federal garantiu emissão de documentos para pessoas privadas de liberdade, dando continuidade aos mutirões nos presídios.",
+    midia: {
+      tipo: "imagem",
+      src: "/mutirao-documentacao.jpeg",
+      alt: "Mutirão de documentação na Penitenciária Silvio Porto",
+    },
+  },
+  {
+    titulo:
+      "Grupos reflexivos sobre violência contra a mulher na Penitenciária Silvio Porto",
+    data: "10 de julho de 2026",
+    href: "/noticias/grupos-reflexivos-violencia-mulher",
+    resumo:
+      "Sessão introdutória de comunicação não violenta reuniu parte dos noivos do casamento coletivo, em trabalho conjunto que gera impactos positivos para a comunidade penal.",
+    midia: {
+      tipo: "imagem",
+      src: "/grupos-reflexivos.jpeg",
+      alt: "Sessão de grupos reflexivos sobre violência contra a mulher",
+    },
+  },
+  {
+    titulo:
       "Gravidez, maternidade e os desafios de manter laços com os filhos, dentro de uma penitenciária",
     data: "04 de julho de 2026",
     href: "/noticias/gravidez-maternidade-penitenciaria",
@@ -34,45 +60,6 @@ const noticias: Noticia[] = [
       tipo: "imagem",
       src: "/gravidez-maternidade.png",
       alt: "Mulheres e maternidade no sistema prisional",
-    },
-  },
-  {
-    titulo:
-      "Visita técnica do CNJ à Paraíba destaca experiência com grupos reflexivos no sistema prisional",
-    data: "Julho 2026",
-    href: "/noticias/visita-cnj-paraiba",
-    resumo:
-      "A Paraíba recebeu visita técnica do Conselho Nacional de Justiça, ocasião em que foi apresentada a experiência do grupo reflexivo desenvolvido na Penitenciária Desembargador Silvio Porto. A iniciativa foi destacada como uma prática relevante no âmbito do sistema prisional paraibano.",
-    midia: {
-      tipo: "video",
-      src: "https://drive.google.com/file/d/1ud6qz0NDl4T0SlB09UgYC0B-yB0DN0b7/preview",
-    },
-    creditos: {
-      fonte: {
-        label: "TJPB",
-        href: "https://www.tjpb.jus.br/e/videos/29235/7641631",
-      },
-      igFonte: {
-        label: "@tjpb_oficial",
-        href: "https://www.instagram.com/p/DagFbYvRxTK/",
-      },
-      igConselho: {
-        label: "@conselhodacomunidadejp",
-        href: "https://www.instagram.com/p/DagatnfvB4I/",
-      },
-    },
-  },
-  {
-    titulo:
-      "LOTEP discute projeto de acolhimento para familiares de internas do Presídio Feminino de João Pessoa",
-    data: "2026",
-    href: "/noticias/lotep-acolhimento-familiares",
-    resumo:
-      "Iniciativa promovida pela Loteria do Estado da Paraíba debateu estratégias de acolhimento e suporte psicossocial para familiares de mulheres privadas de liberdade, articulando parcerias com a rede de proteção social de João Pessoa.",
-    midia: {
-      tipo: "imagem",
-      src: "/acao-apoio-familiares-1.jpeg",
-      alt: "Projeto LOTEP de acolhimento a familiares",
     },
   },
 ];
