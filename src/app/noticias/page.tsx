@@ -1,14 +1,17 @@
-import type { Metadata } from "next";
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title:
-    "Todas as Notícias | Conselho da Comunidade da Comarca de João Pessoa/PB",
-  description:
-    "Registros institucionais e notícias do Conselho da Comunidade da Comarca de João Pessoa/PB.",
+type Noticia = {
+  imagem: string;
+  data: string;
+  titulo: string;
+  resumo: string;
+  href: string;
 };
 
-const noticias = [
+const noticias: Noticia[] = [
   {
     imagem: "/mutirao-documentacao.jpeg",
     data: "10 de julho de 2026",
@@ -65,7 +68,84 @@ const noticias = [
   },
 ];
 
+const MESES: Record<string, number> = {
+  janeiro: 0,
+  fevereiro: 1,
+  março: 2,
+  abril: 3,
+  maio: 4,
+  junho: 5,
+  julho: 6,
+  agosto: 7,
+  setembro: 8,
+  outubro: 9,
+  novembro: 10,
+  dezembro: 11,
+};
+
+/** Converte datas em texto ("10 de julho de 2026", "Julho 2026", "2026") para Date. */
+function parseDataNoticia(dataStr: string): Date | null {
+  const s = dataStr.trim().toLowerCase();
+
+  let m = s.match(/^(\d{1,2})\s+de\s+([a-zç]+)\s+de\s+(\d{4})$/);
+  if (m && MESES[m[2]] !== undefined) {
+    return new Date(Number(m[3]), MESES[m[2]], Number(m[1]));
+  }
+
+  m = s.match(/^([a-zç]+)\s+(?:de\s+)?(\d{4})$/);
+  if (m && MESES[m[1]] !== undefined) {
+    return new Date(Number(m[2]), MESES[m[1]], 1);
+  }
+
+  m = s.match(/^(\d{4})$/);
+  if (m) {
+    return new Date(Number(m[1]), 0, 1);
+  }
+
+  return null;
+}
+
+/** Converte o valor do <input type="date"> (YYYY-MM-DD) para Date local, sem deslocamento de fuso. */
+function parseDataInput(valor: string): Date {
+  const [ano, mes, dia] = valor.split("-").map(Number);
+  return new Date(ano, mes - 1, dia);
+}
+
+const inputDataClass =
+  "border border-[#d8e2ea] rounded-lg px-3 py-2 text-sm text-[#344555] focus:outline-none focus:ring-2 focus:ring-[#0f6bab]";
+
 export default function NoticiasPage() {
+  const [busca, setBusca] = useState("");
+  const [dataInicio, setDataInicio] = useState("");
+  const [dataFim, setDataFim] = useState("");
+
+  const termo = busca.trim().toLowerCase();
+
+  const filtradas = noticias.filter((noticia) => {
+    if (
+      termo &&
+      !noticia.titulo.toLowerCase().includes(termo) &&
+      !noticia.resumo.toLowerCase().includes(termo)
+    ) {
+      return false;
+    }
+
+    if (dataInicio || dataFim) {
+      const dataNoticia = parseDataNoticia(noticia.data);
+      if (!dataNoticia) return false;
+      if (dataInicio && dataNoticia < parseDataInput(dataInicio)) return false;
+      if (dataFim && dataNoticia > parseDataInput(dataFim)) return false;
+    }
+
+    return true;
+  });
+
+  const limparFiltros = () => {
+    setBusca("");
+    setDataInicio("");
+    setDataFim("");
+  };
+
   return (
     <main className="bg-white">
       <div className="max-w-4xl mx-auto px-6 py-16">
@@ -84,30 +164,105 @@ export default function NoticiasPage() {
         </h1>
         <div className="mt-5 h-1.5 w-16 rounded-full bg-[#e5b42b]" />
 
-        <div className="mt-10 space-y-5">
-          {noticias.map((noticia) => (
-            <Link
-              key={noticia.href}
-              href={noticia.href}
-              className="group flex gap-4 rounded border border-[#d8e2ea] bg-white p-4 shadow-sm transition-all duration-300 hover:shadow-md cursor-pointer"
-            >
-              <img
-                src={noticia.imagem}
-                alt=""
-                className="h-24 w-32 flex-shrink-0 rounded object-cover"
+        {/* Barra de filtros */}
+        <div className="mt-10 mb-8 rounded-lg border border-[#d8e2ea] bg-[#f4f6f8] p-4">
+          <div className="flex flex-wrap items-end gap-4">
+            <div>
+              <label
+                htmlFor="filtro-data-inicio"
+                className="mb-1 block text-xs font-semibold uppercase text-[#526170]"
+              >
+                Período de
+              </label>
+              <input
+                id="filtro-data-inicio"
+                type="date"
+                value={dataInicio}
+                onChange={(event) => setDataInicio(event.target.value)}
+                className={inputDataClass}
               />
-              <div>
-                <span className="text-xs text-[#526170]">{noticia.data}</span>
-                <h2 className="font-semibold text-[#153f63] transition-colors group-hover:text-[#0f6bab]">
-                  {noticia.titulo}
-                </h2>
-                <p className="mt-1 text-sm text-[#526170] text-justify">
-                  {noticia.resumo}
-                </p>
-              </div>
-            </Link>
-          ))}
+            </div>
+            <div>
+              <label
+                htmlFor="filtro-data-fim"
+                className="mb-1 block text-xs font-semibold uppercase text-[#526170]"
+              >
+                até
+              </label>
+              <input
+                id="filtro-data-fim"
+                type="date"
+                value={dataFim}
+                onChange={(event) => setDataFim(event.target.value)}
+                className={inputDataClass}
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="filtro-busca"
+                className="mb-1 block text-xs font-semibold uppercase text-[#526170]"
+              >
+                Palavra-chave
+              </label>
+              <input
+                id="filtro-busca"
+                type="text"
+                placeholder="Buscar..."
+                value={busca}
+                onChange={(event) => setBusca(event.target.value)}
+                className="w-48 rounded-lg border border-[#d8e2ea] px-3 py-2 text-sm text-[#344555] focus:outline-none focus:ring-2 focus:ring-[#0f6bab]"
+              />
+            </div>
+            <button
+              type="button"
+              className="flex items-center gap-2 rounded-lg bg-[#0f6bab] px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#153f63]"
+            >
+              🔍 Buscar
+            </button>
+            <button
+              type="button"
+              onClick={limparFiltros}
+              className="text-sm text-[#526170] underline hover:text-[#0f6bab]"
+            >
+              Limpar
+            </button>
+          </div>
         </div>
+
+        <p className="mb-4 text-sm text-[#526170]">
+          {filtradas.length} notícia(s) encontrada(s)
+        </p>
+
+        {filtradas.length === 0 ? (
+          <p className="py-12 text-center text-lg text-[#526170]">
+            Nenhuma notícia encontrada para os filtros aplicados.
+          </p>
+        ) : (
+          <div className="space-y-5">
+            {filtradas.map((noticia) => (
+              <Link
+                key={noticia.href}
+                href={noticia.href}
+                className="group flex gap-4 rounded border border-[#d8e2ea] bg-white p-4 shadow-sm transition-all duration-300 hover:shadow-md cursor-pointer"
+              >
+                <img
+                  src={noticia.imagem}
+                  alt=""
+                  className="h-24 w-32 flex-shrink-0 rounded object-cover"
+                />
+                <div>
+                  <span className="text-xs text-[#526170]">{noticia.data}</span>
+                  <h2 className="font-semibold text-[#153f63] transition-colors group-hover:text-[#0f6bab]">
+                    {noticia.titulo}
+                  </h2>
+                  <p className="mt-1 text-sm text-[#526170] text-justify">
+                    {noticia.resumo}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        )}
 
         <p className="mt-12 text-center text-sm text-[#526170]">
           Mais notícias em breve. Acompanhe nossas redes:{" "}
