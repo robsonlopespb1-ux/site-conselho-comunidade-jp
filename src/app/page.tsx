@@ -204,6 +204,12 @@ export default function Home() {
                   Comarca de João Pessoa/PB
                 </p>
               </div>
+              <Link
+                href="/membros"
+                className="mt-6 inline-block rounded-lg bg-[#0f6bab] px-6 py-3 font-semibold text-white transition-colors duration-200 hover:bg-[#153f63]"
+              >
+                Conheça nossos membros
+              </Link>
             </div>
           </div>
         </section>
