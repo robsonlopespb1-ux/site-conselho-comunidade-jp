@@ -74,7 +74,50 @@ function jsonResponse(payload: unknown, status = 200) {
   });
 }
 
+// Rate-limit em memória, por IP (reseta ao reiniciar o servidor — aceitável
+// para este projeto, que não tem armazenamento persistente).
+const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
+const RATE_LIMIT_MAX = 15; // máximo de mensagens
+const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000; // por hora
+
+// Remove entradas expiradas a cada requisição, evitando crescimento indefinido do Map.
+function cleanupRateLimit() {
+  const now = Date.now();
+  for (const [key, value] of rateLimitMap) {
+    if (now > value.resetAt) {
+      rateLimitMap.delete(key);
+    }
+  }
+}
+
+function isRateLimited(ip: string): boolean {
+  cleanupRateLimit();
+  const now = Date.now();
+  const record = rateLimitMap.get(ip);
+
+  if (!record || now > record.resetAt) {
+    rateLimitMap.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
+    return false;
+  }
+
+  record.count++;
+  return record.count > RATE_LIMIT_MAX;
+}
+
 export async function POST(request: Request) {
+  const forwarded = request.headers.get("x-forwarded-for");
+  const ip = forwarded ? forwarded.split(",")[0].trim() : "unknown";
+
+  if (isRateLimited(ip)) {
+    return jsonResponse(
+      {
+        reply:
+          "Você atingiu o limite de mensagens por hora. Por favor, tente novamente mais tarde ou entre em contato pelo e-mail conselhodacomunidadejp@gmail.com.",
+      },
+      429,
+    );
+  }
+
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
     return jsonResponse(
