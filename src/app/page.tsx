@@ -112,7 +112,6 @@ const parceiros = [
 ];
 
 const transparencyItems = [
-  { label: "Relatórios", href: "/relatorios" },
   { label: "Prestação de contas", href: "/prestacao-de-contas" },
 ];
 
@@ -314,17 +313,17 @@ export default function Home() {
                   </h2>
                   <p className="mt-6 max-w-3xl text-base leading-8 text-blue-50 text-justify">
                     A publicização dos nossos atos é o pilar da nossa atuação.
-                    Aqui, a sociedade tem acesso direto aos nossos relatórios de
-                    gestão, prestações de contas e convênios firmados, garantindo
-                    total clareza e acompanhamento dos resultados.
+                    Aqui, a sociedade tem acesso direto às nossas prestações de
+                    contas e convênios firmados, garantindo total clareza e
+                    acompanhamento dos resultados.
                   </p>
                 </div>
-                <div className="grid grid-cols-1 gap-4 border-t border-white/20 bg-white/10 p-5 sm:grid-cols-2 lg:border-l lg:border-t-0">
+                <div className="flex items-center justify-center border-t border-white/20 bg-white/10 p-5 lg:border-l lg:border-t-0">
                   {transparencyItems.map((item) => (
                     <Link
                       key={item.label}
                       href={item.href}
-                      className="block cursor-pointer transition-transform duration-200 hover:scale-105"
+                      className="block w-full max-w-sm cursor-pointer transition-transform duration-200 hover:scale-105"
                     >
                       <div className="flex h-full items-center border border-white/20 bg-white/10 p-5 text-white">
                         <h3 className="text-lg font-semibold">{item.label}</h3>
