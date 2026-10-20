@@ -14,6 +14,15 @@ type Noticia = {
 
 const noticias: Noticia[] = [
   {
+    imagem: "/dia-criancas-presidio-feminino.jpeg",
+    data: "17 de outubro de 2026",
+    titulo:
+      "Dia das Crianças no Presídio Feminino de João Pessoa reforça a importância dos vínculos familiares",
+    resumo:
+      "Programação realizada na Penitenciária Feminina Maria Júlia Maranhão destaca o papel da família, do acolhimento e da proteção social no processo de reinserção.",
+    href: "/noticias/dia-criancas-presidio-feminino",
+  },
+  {
     imagem: "/castelo-bonecas.jpeg",
     data: "10 de julho de 2026",
     titulo:

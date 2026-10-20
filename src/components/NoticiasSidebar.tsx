@@ -7,6 +7,13 @@ type NoticiasSidebarProps = {
 const todasNoticias = [
   {
     titulo:
+      "Dia das Crianças no Presídio Feminino de João Pessoa reforça a importância dos vínculos familiares",
+    data: "17/10/2026",
+    imagem: "/dia-criancas-presidio-feminino.jpeg",
+    slug: "dia-criancas-presidio-feminino",
+  },
+  {
+    titulo:
       "Castelo de Bonecas: mulheres do sistema prisional produzem os mascotes oficiais do SUS",
     data: "10/07/2026",
     imagem: "/castelo-bonecas.jpeg",

@@ -27,6 +27,21 @@ type Noticia = {
 const noticias: Noticia[] = [
   {
     titulo:
+      "Dia das Crianças no Presídio Feminino de João Pessoa reforça a importância dos vínculos familiares",
+    data: "17 de outubro de 2026",
+    href: "/noticias/dia-criancas-presidio-feminino",
+    resumo:
+      "Programação realizada na Penitenciária Feminina Maria Júlia Maranhão destaca o papel da família, do acolhimento e da proteção social no processo de reinserção.",
+    midia: {
+      tipo: "imagem",
+      src: "/dia-criancas-presidio-feminino.jpeg",
+      alt: "Dia das Crianças na Penitenciária Feminina Maria Júlia Maranhão",
+    },
+    // Foto em retrato: rostos ficam em ~22–33% da altura; centro e topo cortariam os rostos.
+    imagemPosicao: "object-[center_22%]",
+  },
+  {
+    titulo:
       "Castelo de Bonecas: mulheres do sistema prisional produzem os mascotes oficiais do SUS",
     data: "10 de julho de 2026",
     href: "/noticias/castelo-bonecas-mascotes-sus",
@@ -50,19 +65,6 @@ const noticias: Noticia[] = [
       tipo: "imagem",
       src: "/mutirao-documentacao.jpeg",
       alt: "Mutirão de documentação na Penitenciária Silvio Porto",
-    },
-  },
-  {
-    titulo:
-      "Grupos reflexivos sobre violência contra a mulher na Penitenciária Silvio Porto",
-    data: "10 de julho de 2026",
-    href: "/noticias/grupos-reflexivos-violencia-mulher",
-    resumo:
-      "Sessão introdutória de comunicação não violenta reuniu parte dos noivos do casamento coletivo, em trabalho conjunto que gera impactos positivos para a comunidade penal.",
-    midia: {
-      tipo: "imagem",
-      src: "/grupos-reflexivos.jpeg",
-      alt: "Sessão de grupos reflexivos sobre violência contra a mulher",
     },
   },
 ];
