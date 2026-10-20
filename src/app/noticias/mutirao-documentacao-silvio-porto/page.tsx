@@ -8,6 +8,34 @@ export const metadata: Metadata = {
     "Mutirão de documentação na Penitenciária Silvio Porto | Conselho da Comunidade da Comarca de João Pessoa/PB",
   description:
     "Ação integrada com o Instituto de Polícia Científica e a Receita Federal garantiu emissão de documentos para pessoas privadas de liberdade na Penitenciária Desembargador Silvio Porto.",
+  openGraph: {
+    title:
+      "Mutirão de documentação na Penitenciária Desembargador Silvio Porto",
+    description:
+      "Ação integrada com o Instituto de Polícia Científica e a Receita Federal garantiu emissão de documentos para pessoas privadas de liberdade na Penitenciária Desembargador Silvio Porto.",
+    url: "https://www.conselhodacomunidadejp.com.br/noticias/mutirao-documentacao-silvio-porto",
+    siteName: "Conselho da Comunidade da Comarca de João Pessoa/PB",
+    images: [
+      {
+        url: "https://www.conselhodacomunidadejp.com.br/mutirao-documentacao.jpeg",
+        width: 960,
+        height: 1280,
+        alt: "Mutirão de documentação na Penitenciária Silvio Porto",
+      },
+    ],
+    locale: "pt_BR",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Mutirão de documentação na Penitenciária Desembargador Silvio Porto",
+    description:
+      "Ação integrada com o Instituto de Polícia Científica e a Receita Federal garantiu emissão de documentos para pessoas privadas de liberdade na Penitenciária Desembargador Silvio Porto.",
+    images: [
+      "https://www.conselhodacomunidadejp.com.br/mutirao-documentacao.jpeg",
+    ],
+  },
 };
 
 export default function MutiraoDocumentacaoSilvioPortoPage() {

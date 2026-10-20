@@ -8,6 +8,32 @@ export const metadata: Metadata = {
     "FDD/PB aprova 12 projetos sociais | Conselho da Comunidade da Comarca de João Pessoa/PB",
   description:
     "Conselho Gestor do FDD/PB aprova 12 projetos sociais voltados ao sistema prisional.",
+  openGraph: {
+    title: "FDD — Projetos sociais para o sistema prisional",
+    description:
+      "Conselho Gestor do FDD/PB aprova 12 projetos sociais voltados ao sistema prisional.",
+    url: "https://www.conselhodacomunidadejp.com.br/noticias/fdd-projetos-sociais",
+    siteName: "Conselho da Comunidade da Comarca de João Pessoa/PB",
+    images: [
+      {
+        url: "https://www.conselhodacomunidadejp.com.br/acao-apoio-familiares-2.jpeg",
+        width: 1600,
+        height: 1066,
+        alt: "Conselho Gestor do FDD/PB aprova 12 projetos sociais voltados ao sistema prisional",
+      },
+    ],
+    locale: "pt_BR",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FDD — Projetos sociais para o sistema prisional",
+    description:
+      "Conselho Gestor do FDD/PB aprova 12 projetos sociais voltados ao sistema prisional.",
+    images: [
+      "https://www.conselhodacomunidadejp.com.br/acao-apoio-familiares-2.jpeg",
+    ],
+  },
 };
 
 export default function FddProjetosSociaisPage() {

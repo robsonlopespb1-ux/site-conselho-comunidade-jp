@@ -8,6 +8,34 @@ export const metadata: Metadata = {
     "Dia das Crianças no Presídio Feminino | Conselho da Comunidade da Comarca de João Pessoa/PB",
   description:
     "Programação realizada na Penitenciária Feminina Maria Júlia Maranhão destaca o papel da família, do acolhimento e da proteção social no processo de reinserção.",
+  openGraph: {
+    title:
+      "Dia das Crianças no Presídio Feminino de João Pessoa reforça a importância dos vínculos familiares",
+    description:
+      "Programação realizada na Penitenciária Feminina Maria Júlia Maranhão destaca o papel da família, do acolhimento e da proteção social no processo de reinserção.",
+    url: "https://www.conselhodacomunidadejp.com.br/noticias/dia-criancas-presidio-feminino",
+    siteName: "Conselho da Comunidade da Comarca de João Pessoa/PB",
+    images: [
+      {
+        url: "https://www.conselhodacomunidadejp.com.br/dia-criancas-presidio-feminino.jpeg",
+        width: 960,
+        height: 1280,
+        alt: "Dia das Crianças na Penitenciária Feminina Maria Júlia Maranhão",
+      },
+    ],
+    locale: "pt_BR",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Dia das Crianças no Presídio Feminino de João Pessoa reforça a importância dos vínculos familiares",
+    description:
+      "Programação realizada na Penitenciária Feminina Maria Júlia Maranhão destaca o papel da família, do acolhimento e da proteção social no processo de reinserção.",
+    images: [
+      "https://www.conselhodacomunidadejp.com.br/dia-criancas-presidio-feminino.jpeg",
+    ],
+  },
 };
 
 export default function DiaCriancasPresidioFemininoPage() {

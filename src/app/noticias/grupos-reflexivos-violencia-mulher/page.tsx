@@ -8,6 +8,32 @@ export const metadata: Metadata = {
     "Grupos reflexivos sobre violência contra a mulher | Conselho da Comunidade da Comarca de João Pessoa/PB",
   description:
     "Sessão introdutória dos grupos reflexivos sobre violência contra a mulher reuniu internos da Penitenciária Desembargador Silvio Porto em torno da comunicação não violenta.",
+  openGraph: {
+    title:
+      "Grupos reflexivos sobre violência contra a mulher na Penitenciária Silvio Porto",
+    description:
+      "Sessão introdutória dos grupos reflexivos sobre violência contra a mulher reuniu internos da Penitenciária Desembargador Silvio Porto em torno da comunicação não violenta.",
+    url: "https://www.conselhodacomunidadejp.com.br/noticias/grupos-reflexivos-violencia-mulher",
+    siteName: "Conselho da Comunidade da Comarca de João Pessoa/PB",
+    images: [
+      {
+        url: "https://www.conselhodacomunidadejp.com.br/grupos-reflexivos.jpeg",
+        width: 1280,
+        height: 960,
+        alt: "Sessão de grupos reflexivos sobre violência contra a mulher",
+      },
+    ],
+    locale: "pt_BR",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Grupos reflexivos sobre violência contra a mulher na Penitenciária Silvio Porto",
+    description:
+      "Sessão introdutória dos grupos reflexivos sobre violência contra a mulher reuniu internos da Penitenciária Desembargador Silvio Porto em torno da comunicação não violenta.",
+    images: ["https://www.conselhodacomunidadejp.com.br/grupos-reflexivos.jpeg"],
+  },
 };
 
 export default function GruposReflexivosViolenciaMulherPage() {

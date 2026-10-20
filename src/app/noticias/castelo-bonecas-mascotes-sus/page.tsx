@@ -8,6 +8,32 @@ export const metadata: Metadata = {
     "Castelo de Bonecas: mascotes oficiais do SUS | Conselho da Comunidade da Comarca de João Pessoa/PB",
   description:
     "Artesãs da Penitenciária Feminina Maria Júlia Maranhão confeccionaram os novos mascotes do SUS, SUSi e PegaSUS, em projeto do Emprega Lab do CNJ que promove inclusão sociolaboral.",
+  openGraph: {
+    title:
+      "Castelo de Bonecas: mulheres do sistema prisional produzem os mascotes oficiais do SUS",
+    description:
+      "Artesãs da Penitenciária Feminina Maria Júlia Maranhão confeccionaram os novos mascotes do SUS, SUSi e PegaSUS, em projeto do Emprega Lab do CNJ que promove inclusão sociolaboral.",
+    url: "https://www.conselhodacomunidadejp.com.br/noticias/castelo-bonecas-mascotes-sus",
+    siteName: "Conselho da Comunidade da Comarca de João Pessoa/PB",
+    images: [
+      {
+        url: "https://www.conselhodacomunidadejp.com.br/castelo-bonecas.jpeg",
+        width: 1600,
+        height: 1143,
+        alt: "Artesãs do Castelo de Bonecas com os mascotes SUSi e PegaSUS",
+      },
+    ],
+    locale: "pt_BR",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Castelo de Bonecas: mulheres do sistema prisional produzem os mascotes oficiais do SUS",
+    description:
+      "Artesãs da Penitenciária Feminina Maria Júlia Maranhão confeccionaram os novos mascotes do SUS, SUSi e PegaSUS, em projeto do Emprega Lab do CNJ que promove inclusão sociolaboral.",
+    images: ["https://www.conselhodacomunidadejp.com.br/castelo-bonecas.jpeg"],
+  },
 };
 
 export default function CasteloBonecasMascotesSusPage() {

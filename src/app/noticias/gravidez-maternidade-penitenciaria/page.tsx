@@ -8,6 +8,32 @@ export const metadata: Metadata = {
     "Gravidez e maternidade na penitenciária | Conselho da Comunidade da Comarca de João Pessoa/PB",
   description:
     "Reportagem do TJPB retrata a realidade de mulheres grávidas e mães na Penitenciária Feminina Maria Júlia Maranhão, em João Pessoa, e o acompanhamento do Conselho da Comunidade.",
+  openGraph: {
+    title:
+      "Gravidez, maternidade e os desafios de manter laços com os filhos, dentro de uma penitenciária",
+    description:
+      "Reportagem do TJPB retrata a realidade de mulheres grávidas e mães na Penitenciária Feminina Maria Júlia Maranhão, em João Pessoa, e o acompanhamento do Conselho da Comunidade.",
+    url: "https://www.conselhodacomunidadejp.com.br/noticias/gravidez-maternidade-penitenciaria",
+    siteName: "Conselho da Comunidade da Comarca de João Pessoa/PB",
+    images: [
+      {
+        url: "https://www.conselhodacomunidadejp.com.br/gravidez-maternidade.png",
+        width: 824,
+        height: 462,
+        alt: "Mulheres e maternidade no sistema prisional",
+      },
+    ],
+    locale: "pt_BR",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Gravidez, maternidade e os desafios de manter laços com os filhos, dentro de uma penitenciária",
+    description:
+      "Reportagem do TJPB retrata a realidade de mulheres grávidas e mães na Penitenciária Feminina Maria Júlia Maranhão, em João Pessoa, e o acompanhamento do Conselho da Comunidade.",
+    images: ["https://www.conselhodacomunidadejp.com.br/gravidez-maternidade.png"],
+  },
 };
 
 export default function GravidezMaternidadePenitenciariaPage() {

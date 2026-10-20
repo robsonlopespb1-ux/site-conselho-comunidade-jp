@@ -8,6 +8,32 @@ export const metadata: Metadata = {
     "LOTEP discute projeto de acolhimento para familiares | Conselho da Comunidade da Comarca de João Pessoa/PB",
   description:
     "LOTEP discute projeto de acolhimento para familiares de internas do Presídio Feminino de João Pessoa.",
+  openGraph: {
+    title: "LOTEP — Acolhimento de familiares de pessoas privadas de liberdade",
+    description:
+      "LOTEP discute projeto de acolhimento para familiares de internas do Presídio Feminino de João Pessoa.",
+    url: "https://www.conselhodacomunidadejp.com.br/noticias/lotep-acolhimento-familiares",
+    siteName: "Conselho da Comunidade da Comarca de João Pessoa/PB",
+    images: [
+      {
+        url: "https://www.conselhodacomunidadejp.com.br/acao-apoio-familiares-1.jpeg",
+        width: 667,
+        height: 500,
+        alt: "LOTEP discute projeto de acolhimento para familiares de internas do Presídio Feminino de João Pessoa",
+      },
+    ],
+    locale: "pt_BR",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "LOTEP — Acolhimento de familiares de pessoas privadas de liberdade",
+    description:
+      "LOTEP discute projeto de acolhimento para familiares de internas do Presídio Feminino de João Pessoa.",
+    images: [
+      "https://www.conselhodacomunidadejp.com.br/acao-apoio-familiares-1.jpeg",
+    ],
+  },
 };
 
 export default function LotepAcolhimentoFamiliaresPage() {

@@ -8,6 +8,32 @@ export const metadata: Metadata = {
     "Visita técnica do CNJ à Paraíba | Conselho da Comunidade da Comarca de João Pessoa/PB",
   description:
     "Visita técnica do CNJ à Paraíba destaca experiência com grupos reflexivos no sistema prisional.",
+  openGraph: {
+    title:
+      "Visita técnica do CNJ à Paraíba destaca experiência com grupos reflexivos no sistema prisional",
+    description:
+      "Visita técnica do CNJ à Paraíba destaca experiência com grupos reflexivos no sistema prisional.",
+    url: "https://www.conselhodacomunidadejp.com.br/noticias/visita-cnj-paraiba",
+    siteName: "Conselho da Comunidade da Comarca de João Pessoa/PB",
+    images: [
+      {
+        url: "https://www.conselhodacomunidadejp.com.br/thumb-cnj.png",
+        width: 679,
+        height: 384,
+        alt: "Visita técnica do CNJ à Paraíba sobre grupos reflexivos no sistema prisional",
+      },
+    ],
+    locale: "pt_BR",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Visita técnica do CNJ à Paraíba destaca experiência com grupos reflexivos no sistema prisional",
+    description:
+      "Visita técnica do CNJ à Paraíba destaca experiência com grupos reflexivos no sistema prisional.",
+    images: ["https://www.conselhodacomunidadejp.com.br/thumb-cnj.png"],
+  },
 };
 
 export default function VisitaCnjParaibaPage() {
