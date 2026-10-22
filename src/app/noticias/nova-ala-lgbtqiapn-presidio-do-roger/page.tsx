@@ -170,8 +170,8 @@ export default function NovaAlaLgbtqiapnPresidioDoRogerPage() {
         </p>
 
         <img
-          src="/nova-ala-placa-detalhe.jpeg"
-          alt="Detalhe da placa de inauguração da Ala LGBTQIAPN+ da Penitenciária Desembargador Flósculo da Nóbrega, com as instituições e autoridades envolvidas"
+          src="/nova-ala-frente-da-ala.jpeg"
+          alt="Pessoas privadas de liberdade, com a identidade preservada, reunidas diante da nova ala LGBTQIAPN+ durante a solenidade, com o bispo da Universal nos Presídios em primeiro plano"
           className="mt-8 w-full rounded-lg"
         />
 
