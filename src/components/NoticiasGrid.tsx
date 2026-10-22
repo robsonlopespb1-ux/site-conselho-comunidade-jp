@@ -27,6 +27,19 @@ type Noticia = {
 const noticias: Noticia[] = [
   {
     titulo:
+      "Integração entre instituições viabiliza nova ala LGBTQIAPN+ no Presídio do Roger",
+    data: "22 de outubro de 2026",
+    href: "/noticias/nova-ala-lgbtqiapn-presidio-do-roger",
+    resumo:
+      "Espaço inaugurado na Penitenciária Desembargador Flósculo da Nóbrega resulta da atuação conjunta da Polícia Penal da Paraíba, Vara de Execução Penal de João Pessoa, Universal nos Presídios e Construtora Monte Sinai Ltda.",
+    midia: {
+      tipo: "imagem",
+      src: "/nova-ala-corte-da-fita.jpeg",
+      alt: "Descerramento da placa de inauguração da Ala LGBTQIAPN+ da Penitenciária Desembargador Flósculo da Nóbrega",
+    },
+  },
+  {
+    titulo:
       "Dia das Crianças no Presídio Feminino de João Pessoa reforça a importância dos vínculos familiares",
     data: "17 de outubro de 2026",
     href: "/noticias/dia-criancas-presidio-feminino",
@@ -53,19 +66,6 @@ const noticias: Noticia[] = [
       alt: "Artesãs do Castelo de Bonecas com os mascotes SUSi e PegaSUS",
     },
     imagemPosicao: "object-top",
-  },
-  {
-    titulo:
-      "Mutirão de documentação na Penitenciária Desembargador Silvio Porto",
-    data: "10 de julho de 2026",
-    href: "/noticias/mutirao-documentacao-silvio-porto",
-    resumo:
-      "Ação integrada com o Instituto de Polícia Científica e a Receita Federal garantiu emissão de documentos para pessoas privadas de liberdade, dando continuidade aos mutirões nos presídios.",
-    midia: {
-      tipo: "imagem",
-      src: "/mutirao-documentacao.jpeg",
-      alt: "Mutirão de documentação na Penitenciária Silvio Porto",
-    },
   },
 ];
 

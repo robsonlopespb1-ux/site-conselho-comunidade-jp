@@ -7,6 +7,13 @@ type NoticiasSidebarProps = {
 const todasNoticias = [
   {
     titulo:
+      "Integração entre instituições viabiliza nova ala LGBTQIAPN+ no Presídio do Roger",
+    data: "22/10/2026",
+    imagem: "/nova-ala-corte-da-fita.jpeg",
+    slug: "nova-ala-lgbtqiapn-presidio-do-roger",
+  },
+  {
+    titulo:
       "Dia das Crianças no Presídio Feminino de João Pessoa reforça a importância dos vínculos familiares",
     data: "17/10/2026",
     imagem: "/dia-criancas-presidio-feminino.jpeg",

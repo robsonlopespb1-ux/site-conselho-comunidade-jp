@@ -14,6 +14,15 @@ type Noticia = {
 
 const noticias: Noticia[] = [
   {
+    imagem: "/nova-ala-corte-da-fita.jpeg",
+    data: "22 de outubro de 2026",
+    titulo:
+      "Integração entre instituições viabiliza nova ala LGBTQIAPN+ no Presídio do Roger",
+    resumo:
+      "Espaço inaugurado na Penitenciária Desembargador Flósculo da Nóbrega resulta da atuação conjunta da Polícia Penal da Paraíba, Vara de Execução Penal de João Pessoa, Universal nos Presídios e Construtora Monte Sinai Ltda.",
+    href: "/noticias/nova-ala-lgbtqiapn-presidio-do-roger",
+  },
+  {
     imagem: "/dia-criancas-presidio-feminino.jpeg",
     data: "17 de outubro de 2026",
     titulo:
