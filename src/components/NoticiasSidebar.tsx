@@ -9,7 +9,7 @@ const todasNoticias = [
     titulo:
       "Integração entre instituições viabiliza nova ala LGBTQIAPN+ no Presídio do Roger",
     data: "22/10/2026",
-    imagem: "/nova-ala-corte-da-fita.jpeg",
+    imagem: "/nova-ala-placa-inaugural.jpeg",
     slug: "nova-ala-lgbtqiapn-presidio-do-roger",
   },
   {

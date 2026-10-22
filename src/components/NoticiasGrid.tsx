@@ -34,8 +34,8 @@ const noticias: Noticia[] = [
       "Espaço inaugurado na Penitenciária Desembargador Flósculo da Nóbrega resulta da atuação conjunta da Polícia Penal da Paraíba, Vara de Execução Penal de João Pessoa, Universal nos Presídios e Construtora Monte Sinai Ltda.",
     midia: {
       tipo: "imagem",
-      src: "/nova-ala-corte-da-fita.jpeg",
-      alt: "Descerramento da placa de inauguração da Ala LGBTQIAPN+ da Penitenciária Desembargador Flósculo da Nóbrega",
+      src: "/nova-ala-placa-inaugural.jpeg",
+      alt: "Quatro pessoas seguram a fita vermelha junto à placa de inauguração da Ala LGBTQIAPN+ da Penitenciária Desembargador Flósculo da Nóbrega",
     },
   },
   {

@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     siteName: "Conselho da Comunidade da Comarca de João Pessoa/PB",
     images: [
       {
-        url: "https://www.conselhodacomunidadejp.com.br/nova-ala-corte-da-fita-og.jpeg",
+        url: "https://www.conselhodacomunidadejp.com.br/nova-ala-placa-inaugural-og.jpeg",
         width: 1200,
         height: 630,
-        alt: "Descerramento da placa de inauguração da Ala LGBTQIAPN+ da Penitenciária Desembargador Flósculo da Nóbrega",
+        alt: "Quatro pessoas seguram a fita vermelha junto à placa de inauguração da Ala LGBTQIAPN+ da Penitenciária Desembargador Flósculo da Nóbrega",
       },
     ],
     locale: "pt_BR",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description:
       "Espaço inaugurado na Penitenciária Desembargador Flósculo da Nóbrega resulta da atuação conjunta da Polícia Penal da Paraíba, Vara de Execução Penal de João Pessoa, Universal nos Presídios e Construtora Monte Sinai Ltda.",
     images: [
-      "https://www.conselhodacomunidadejp.com.br/nova-ala-corte-da-fita-og.jpeg",
+      "https://www.conselhodacomunidadejp.com.br/nova-ala-placa-inaugural-og.jpeg",
     ],
   },
 };
@@ -65,8 +65,8 @@ export default function NovaAlaLgbtqiapnPresidioDoRogerPage() {
         <div className="h-1.5 w-16 rounded-full bg-[#e5b42b]" />
 
         <img
-          src="/nova-ala-corte-da-fita.jpeg"
-          alt="Descerramento da placa de inauguração da Ala LGBTQIAPN+ da Penitenciária Desembargador Flósculo da Nóbrega, com fita vermelha"
+          src="/nova-ala-placa-inaugural.jpeg"
+          alt="Quatro pessoas seguram a fita vermelha junto à placa de inauguração da Ala LGBTQIAPN+ da Penitenciária Desembargador Flósculo da Nóbrega"
           className="mt-8 w-full rounded-lg"
         />
         <p className="mt-2 text-xs italic text-[#526170]">
@@ -155,8 +155,8 @@ export default function NovaAlaLgbtqiapnPresidioDoRogerPage() {
         </p>
 
         <img
-          src="/nova-ala-placa-inaugural.jpeg"
-          alt="Autoridades e parceiros reunidos junto à placa de inauguração da nova ala, envolta em fita vermelha"
+          src="/nova-ala-corte-da-fita.jpeg"
+          alt="Descerramento da placa de inauguração da Ala LGBTQIAPN+ da Penitenciária Desembargador Flósculo da Nóbrega, com fita vermelha"
           className="mt-8 w-full rounded-lg"
         />
 

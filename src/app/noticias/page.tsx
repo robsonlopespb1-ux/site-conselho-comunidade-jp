@@ -14,7 +14,7 @@ type Noticia = {
 
 const noticias: Noticia[] = [
   {
-    imagem: "/nova-ala-corte-da-fita.jpeg",
+    imagem: "/nova-ala-placa-inaugural.jpeg",
     data: "22 de outubro de 2026",
     titulo:
       "Integração entre instituições viabiliza nova ala LGBTQIAPN+ no Presídio do Roger",
