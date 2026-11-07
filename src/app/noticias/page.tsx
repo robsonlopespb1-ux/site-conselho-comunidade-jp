@@ -14,6 +14,15 @@ type Noticia = {
 
 const noticias: Noticia[] = [
   {
+    imagem: "/ciap-cartaz-minha-historia-continua.jpeg",
+    data: "07 de novembro de 2026",
+    titulo:
+      "Pouco mais de um ano após sua inauguração, CIAP fortalece alternativas penais e promove benefícios à sociedade paraibana",
+    resumo:
+      "Inaugurada em agosto de 2025, a Central Integrada de Alternativas Penais consolida sua atuação na responsabilização penal, na prevenção da violência doméstica e na construção de alternativas à prisão, contribuindo para uma política de segurança pública mais eficiente e humanizada.",
+    href: "/noticias/ciap-um-ano-alternativas-penais",
+  },
+  {
     imagem: "/jecrim-autoridades-na-unidade.jpeg",
     data: "07 de novembro de 2026",
     titulo:

@@ -7,6 +7,13 @@ type NoticiasSidebarProps = {
 const todasNoticias = [
   {
     titulo:
+      "Pouco mais de um ano após sua inauguração, CIAP fortalece alternativas penais e promove benefícios à sociedade paraibana",
+    data: "07/11/2026",
+    imagem: "/ciap-cartaz-minha-historia-continua.jpeg",
+    slug: "ciap-um-ano-alternativas-penais",
+  },
+  {
+    titulo:
       "Fiscalização institucional destaca papel do JECRIM no fortalecimento de projetos de ressocialização em João Pessoa",
     data: "07/11/2026",
     imagem: "/jecrim-autoridades-na-unidade.jpeg",

@@ -27,6 +27,19 @@ type Noticia = {
 const noticias: Noticia[] = [
   {
     titulo:
+      "Pouco mais de um ano após sua inauguração, CIAP fortalece alternativas penais e promove benefícios à sociedade paraibana",
+    data: "07 de novembro de 2026",
+    href: "/noticias/ciap-um-ano-alternativas-penais",
+    resumo:
+      "Inaugurada em agosto de 2025, a Central Integrada de Alternativas Penais consolida sua atuação na responsabilização penal, na prevenção da violência doméstica e na construção de alternativas à prisão, contribuindo para uma política de segurança pública mais eficiente e humanizada.",
+    midia: {
+      tipo: "imagem",
+      src: "/ciap-cartaz-minha-historia-continua.jpeg",
+      alt: "Cartaz com a frase “Minha história continua: novos capítulos começam, com novas escolhas”, cercado de notas adesivas com palavras como reflexão, paz, gratidão e recomeço",
+    },
+  },
+  {
+    titulo:
       "Fiscalização institucional destaca papel do JECRIM no fortalecimento de projetos de ressocialização em João Pessoa",
     data: "07 de novembro de 2026",
     href: "/noticias/fiscalizacao-jecrim-presidio-feminino",
@@ -50,21 +63,6 @@ const noticias: Noticia[] = [
       src: "/nova-ala-placa-inaugural.jpeg",
       alt: "Quatro pessoas seguram a fita vermelha junto à placa de inauguração da Ala LGBTQIAPN+ da Penitenciária Desembargador Flósculo da Nóbrega",
     },
-  },
-  {
-    titulo:
-      "Dia das Crianças no Presídio Feminino de João Pessoa reforça a importância dos vínculos familiares",
-    data: "17 de outubro de 2026",
-    href: "/noticias/dia-criancas-presidio-feminino",
-    resumo:
-      "Programação realizada na Penitenciária Feminina Maria Júlia Maranhão destaca o papel da família, do acolhimento e da proteção social no processo de reinserção.",
-    midia: {
-      tipo: "imagem",
-      src: "/dia-criancas-presidio-feminino.jpeg",
-      alt: "Dia das Crianças na Penitenciária Feminina Maria Júlia Maranhão",
-    },
-    // Foto em retrato: rostos ficam em ~22–33% da altura; centro e topo cortariam os rostos.
-    imagemPosicao: "object-[center_22%]",
   },
 ];
 
