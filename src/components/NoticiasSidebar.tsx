@@ -7,6 +7,13 @@ type NoticiasSidebarProps = {
 const todasNoticias = [
   {
     titulo:
+      "Fiscalização institucional destaca papel do JECRIM no fortalecimento de projetos de ressocialização em João Pessoa",
+    data: "07/11/2026",
+    imagem: "/jecrim-autoridades-na-unidade.jpeg",
+    slug: "fiscalizacao-jecrim-presidio-feminino",
+  },
+  {
+    titulo:
       "Integração entre instituições viabiliza nova ala LGBTQIAPN+ no Presídio do Roger",
     data: "22/10/2026",
     imagem: "/nova-ala-placa-inaugural.jpeg",

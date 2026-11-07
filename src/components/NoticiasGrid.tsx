@@ -27,6 +27,19 @@ type Noticia = {
 const noticias: Noticia[] = [
   {
     titulo:
+      "Fiscalização institucional destaca papel do JECRIM no fortalecimento de projetos de ressocialização em João Pessoa",
+    data: "07 de novembro de 2026",
+    href: "/noticias/fiscalizacao-jecrim-presidio-feminino",
+    resumo:
+      "Visita ao Presídio Feminino reuniu magistrados e representantes do Conselho da Comunidade e evidenciou a importância dos investimentos do Juizado Especial Criminal em iniciativas de reinserção social nas unidades prisionais da capital.",
+    midia: {
+      tipo: "imagem",
+      src: "/jecrim-autoridades-na-unidade.jpeg",
+      alt: "Comitiva da visita de fiscalização percorre a Penitenciária de Reeducação Feminina Maria Júlia Maranhão, com magistrados e a direção da unidade à frente",
+    },
+  },
+  {
+    titulo:
       "Integração entre instituições viabiliza nova ala LGBTQIAPN+ no Presídio do Roger",
     data: "22 de outubro de 2026",
     href: "/noticias/nova-ala-lgbtqiapn-presidio-do-roger",
@@ -52,20 +65,6 @@ const noticias: Noticia[] = [
     },
     // Foto em retrato: rostos ficam em ~22–33% da altura; centro e topo cortariam os rostos.
     imagemPosicao: "object-[center_22%]",
-  },
-  {
-    titulo:
-      "Castelo de Bonecas: mulheres do sistema prisional produzem os mascotes oficiais do SUS",
-    data: "10 de julho de 2026",
-    href: "/noticias/castelo-bonecas-mascotes-sus",
-    resumo:
-      "Artesãs da Penitenciária Feminina Maria Júlia Maranhão confeccionaram os novos mascotes do Sistema Único de Saúde, SUSi e PegaSUS, em projeto do Emprega Lab do CNJ que promove inclusão sociolaboral.",
-    midia: {
-      tipo: "imagem",
-      src: "/castelo-bonecas.jpeg",
-      alt: "Artesãs do Castelo de Bonecas com os mascotes SUSi e PegaSUS",
-    },
-    imagemPosicao: "object-top",
   },
 ];
 

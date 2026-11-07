@@ -14,6 +14,15 @@ type Noticia = {
 
 const noticias: Noticia[] = [
   {
+    imagem: "/jecrim-autoridades-na-unidade.jpeg",
+    data: "07 de novembro de 2026",
+    titulo:
+      "Fiscalização institucional destaca papel do JECRIM no fortalecimento de projetos de ressocialização em João Pessoa",
+    resumo:
+      "Visita ao Presídio Feminino reuniu magistrados e representantes do Conselho da Comunidade e evidenciou a importância dos investimentos do Juizado Especial Criminal em iniciativas de reinserção social nas unidades prisionais da capital.",
+    href: "/noticias/fiscalizacao-jecrim-presidio-feminino",
+  },
+  {
     imagem: "/nova-ala-placa-inaugural.jpeg",
     data: "22 de outubro de 2026",
     titulo:
