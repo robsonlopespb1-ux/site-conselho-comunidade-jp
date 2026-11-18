@@ -7,6 +7,13 @@ type NoticiasSidebarProps = {
 const todasNoticias = [
   {
     titulo:
+      "Feirão da Empregabilidade busca ampliar oportunidades de trabalho e renda para familiares e egressos do sistema prisional em João Pessoa",
+    data: "18/11/2026",
+    imagem: "/feirao-empregabilidade-capa.jpeg",
+    slug: "feirao-empregabilidade-egressos-familiares",
+  },
+  {
+    titulo:
       "Pouco mais de um ano após sua inauguração, CIAP fortalece alternativas penais e promove benefícios à sociedade paraibana",
     data: "07/11/2026",
     imagem: "/ciap-cartaz-minha-historia-continua.jpeg",

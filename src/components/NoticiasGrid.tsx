@@ -27,6 +27,19 @@ type Noticia = {
 const noticias: Noticia[] = [
   {
     titulo:
+      "Feirão da Empregabilidade busca ampliar oportunidades de trabalho e renda para familiares e egressos do sistema prisional em João Pessoa",
+    data: "18 de novembro de 2026",
+    href: "/noticias/feirao-empregabilidade-egressos-familiares",
+    resumo:
+      "Promovida pelo Conselho da Comunidade, Escritório Social e Sedest-JP, iniciativa acontecerá no dia 24 de novembro, das 9h às 15h, na sede do Escritório Social, no Centro da Capital, reunindo serviços de empregabilidade, incentivo ao empreendedorismo e capacitação profissional.",
+    midia: {
+      tipo: "imagem",
+      src: "/feirao-empregabilidade-capa.jpeg",
+      alt: "Imagem ilustrativa de atendimento ao público: uma pessoa é orientada por uma atendente em uma mesa, com outros atendimentos ao fundo",
+    },
+  },
+  {
+    titulo:
       "Pouco mais de um ano após sua inauguração, CIAP fortalece alternativas penais e promove benefícios à sociedade paraibana",
     data: "07 de novembro de 2026",
     href: "/noticias/ciap-um-ano-alternativas-penais",
@@ -49,19 +62,6 @@ const noticias: Noticia[] = [
       tipo: "imagem",
       src: "/jecrim-autoridades-na-unidade.jpeg",
       alt: "Comitiva da visita de fiscalização percorre a Penitenciária de Reeducação Feminina Maria Júlia Maranhão, com magistrados e a direção da unidade à frente",
-    },
-  },
-  {
-    titulo:
-      "Integração entre instituições viabiliza nova ala LGBTQIAPN+ no Presídio do Roger",
-    data: "22 de outubro de 2026",
-    href: "/noticias/nova-ala-lgbtqiapn-presidio-do-roger",
-    resumo:
-      "Espaço inaugurado na Penitenciária Desembargador Flósculo da Nóbrega resulta da atuação conjunta da Polícia Penal da Paraíba, Vara de Execução Penal de João Pessoa, Universal nos Presídios e Construtora Monte Sinai Ltda.",
-    midia: {
-      tipo: "imagem",
-      src: "/nova-ala-placa-inaugural.jpeg",
-      alt: "Quatro pessoas seguram a fita vermelha junto à placa de inauguração da Ala LGBTQIAPN+ da Penitenciária Desembargador Flósculo da Nóbrega",
     },
   },
 ];

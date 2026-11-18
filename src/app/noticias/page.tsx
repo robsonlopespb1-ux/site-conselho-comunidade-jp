@@ -14,6 +14,15 @@ type Noticia = {
 
 const noticias: Noticia[] = [
   {
+    imagem: "/feirao-empregabilidade-capa.jpeg",
+    data: "18 de novembro de 2026",
+    titulo:
+      "Feirão da Empregabilidade busca ampliar oportunidades de trabalho e renda para familiares e egressos do sistema prisional em João Pessoa",
+    resumo:
+      "Promovida pelo Conselho da Comunidade, Escritório Social e Sedest-JP, iniciativa acontecerá no dia 24 de novembro, das 9h às 15h, na sede do Escritório Social, no Centro da Capital, reunindo serviços de empregabilidade, incentivo ao empreendedorismo e capacitação profissional.",
+    href: "/noticias/feirao-empregabilidade-egressos-familiares",
+  },
+  {
     imagem: "/ciap-cartaz-minha-historia-continua.jpeg",
     data: "07 de novembro de 2026",
     titulo:
